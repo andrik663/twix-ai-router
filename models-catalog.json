@@ -1,20 +1,6 @@
 {
   "models": [
     {
-      "id": "deepseek/deepseek-v4.1-flash-1017-fast",
-      "displayName": "DeepSeek V4.1 Flash 1017 Fast",
-      "providerDisplay": "DeepSeek",
-      "inputCost": 0.6,
-      "outputCost": 2.4,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
       "id": "elorian/glimpse",
       "displayName": "Glimpse",
       "providerDisplay": "Elorian",
@@ -26,7 +12,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 909,
+      "verifiedReply": "We need to respond to user \"hallo\". Need analysis in same language as"
     },
     {
       "id": "deepseek/deepseek-v4.1-flash-1017",
@@ -40,7 +28,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1277,
+      "verifiedReply": "We need answer in German likely. Just greeting. Need respond friendly. \"H"
     },
     {
       "id": "reflection/beam-1.0-501b-a23b",
@@ -54,7 +44,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 780,
+      "verifiedReply": "Der Nutzer sagt \"hallo\" auf Deutsch. Das ist"
     },
     {
       "id": "meta-llama/muse-spark-open",
@@ -68,7 +60,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1157,
+      "verifiedReply": "User says \"hallo\" (German). Should respond in German"
     },
     {
       "id": "unbiased/pareto-26.10",
@@ -82,7 +76,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 4703,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "nvidia/nemotron-3.5-super-vl",
@@ -96,21 +92,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "stealth/cat-jam",
-      "displayName": "Cat Jam",
-      "providerDisplay": "Stealth",
-      "inputCost": null,
-      "outputCost": null,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 876,
+      "verifiedReply": "The user said \"hallo\" which is a greeting in several languages (German"
     },
     {
       "id": "unbiased/pareto-26.9",
@@ -124,7 +108,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2747,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "google/gemini-4-argon",
@@ -138,7 +124,9 @@
       "featured": true,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2591,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen heute helfen?"
     },
     {
       "id": "liquid/lfm-2.5-24b-a2b",
@@ -152,21 +140,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "liquid/lfm2.5-24b-a2b",
-      "displayName": "LFM2.5-24B-A2B",
-      "providerDisplay": "Liquid",
-      "inputCost": 0.049999999999999996,
-      "outputCost": 0.7,
-      "contextWindow": 128000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 845,
+      "verifiedReply": "The user just said \"hallo\" — a simple, friendly greeting"
     },
     {
       "id": "meta-llama/muse-wonder",
@@ -180,49 +156,9 @@
       "featured": true,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "meta-llama/muse-wonder-1.0",
-      "displayName": "Muse Wonder",
-      "providerDisplay": "Meta",
-      "inputCost": 4,
-      "outputCost": 20,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "callstack/apex",
-      "displayName": "Apex",
-      "providerDisplay": "Callstack",
-      "inputCost": 0.5,
-      "outputCost": 3,
-      "contextWindow": 262144,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "anthropic/claude-opus-5-5-fast",
-      "displayName": "Claude Opus 5.5 (Fast)",
-      "providerDisplay": "Anthropic",
-      "inputCost": 8,
-      "outputCost": 40,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1446,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "anthropic/claude-opus-5-5",
@@ -236,7 +172,9 @@
       "featured": true,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2420,
+      "verifiedReply": "\"Hallo\" looks like it could be German or Dutch rather than English."
     },
     {
       "id": "anthropic/claude-sonnet-5-5",
@@ -250,7 +188,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 7998,
+      "verifiedReply": "Hallo! Wie kann ich dir helf"
     },
     {
       "id": "anthropic/claude-haiku-5-5",
@@ -264,50 +204,9 @@
       "featured": true,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "stealth/glyph-cluster",
-      "displayName": "Glyph Cluster",
-      "providerDisplay": "Stealth",
-      "inputCost": null,
-      "outputCost": null,
-      "contextWindow": 256000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "google/gemini-nano-banana-2.1",
-      "displayName": "Nano Banana 2.1",
-      "providerDisplay": "Google",
-      "inputCost": 1.5,
-      "outputCost": 7.5,
-      "contextWindow": 65536,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "image",
-        "text"
-      ]
-    },
-    {
-      "id": "mistralai/mistral-large-4",
-      "displayName": "Mistral Large 4",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.6799999999999999,
-      "outputCost": 2.09,
-      "contextWindow": 524288,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2906,
+      "verifiedReply": "Hallo! Schön, dass du da bist."
     },
     {
       "id": "mistralai/mistral-large-4-0",
@@ -321,21 +220,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-6.1-sol-fast",
-      "displayName": "GPT-6.1 Sol (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 4,
-      "outputCost": 20,
-      "contextWindow": 1050000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1234,
+      "verifiedReply": "The user said \"hallo\" which is a greeting in German (and"
     },
     {
       "id": "openai/gpt-6.1-sol",
@@ -349,7 +236,9 @@
       "featured": true,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 998,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-6.1-sol-pro",
@@ -363,21 +252,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "deepseek/deepseek-v4.1-flash-fast",
-      "displayName": "DeepSeek V4.1 Flash Fast",
-      "providerDisplay": "DeepSeek",
-      "inputCost": 0.6,
-      "outputCost": 2.4,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2578,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "deepseek/deepseek-v4.1-flash",
@@ -391,7 +268,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 812,
+      "verifiedReply": "We need answer in German likely. User says \"hallo\". Need respond friendly"
     },
     {
       "id": "inclusionai/ling-3.1-flash",
@@ -405,21 +284,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "meituan/longcat-2.5-preview",
-      "displayName": "LongCat 2.5 Preview",
-      "providerDisplay": "Meituan",
-      "inputCost": 0.3,
-      "outputCost": 1.2,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1720,
+      "verifiedReply": "The user just said \"hallo\" — a simple greeting, likely German/D"
     },
     {
       "id": "perceptron/perceptron-mk1.5",
@@ -433,7 +300,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1490,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen heute helfen?"
     },
     {
       "id": "typesafe/jev-router",
@@ -447,7 +316,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1199,
+      "verifiedReply": "The user greeted with \"hallo\" in my thinking process. I need to"
     },
     {
       "id": "qwen/qwen3.8-max-prime",
@@ -461,7 +332,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2847,
+      "verifiedReply": "We need answer to user \"hallo\". User likely Dutch/German? \""
     },
     {
       "id": "aion-labs/aion-3.5",
@@ -475,7 +348,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2424,
+      "verifiedReply": "The user just said \"hallo\" which is German for \"hello\". Let me analyze:"
     },
     {
       "id": "fireworks/ember-1",
@@ -489,7 +364,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1128,
+      "verifiedReply": "The user just said \"hallo\" - which is \"hello\" in German"
     },
     {
       "id": "aion-labs/aion-3.5-mini",
@@ -503,7 +380,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1612,
+      "verifiedReply": "The user says \"hallo\" - a simple greeting in German or Dutch. Let me plan"
     },
     {
       "id": "z-ai/glm-5.3-prime",
@@ -517,7 +396,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1203,
+      "verifiedReply": "Hallo"
     },
     {
       "id": "upstage/solar-mini4",
@@ -531,21 +412,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-6-sol-fast",
-      "displayName": "GPT-6 Sol (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 4,
-      "outputCost": 20,
-      "contextWindow": 1050000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1516,
+      "verifiedReply": "Hallo! 👋 Hvordan kan jeg hjælpe dig"
     },
     {
       "id": "openai/gpt-6-sol",
@@ -559,7 +428,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1150,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-6-sol-pro",
@@ -573,7 +444,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1050,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "cohere/command-a-plus",
@@ -587,21 +460,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-6-luna-fast",
-      "displayName": "GPT-6 Luna (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 1,
-      "contextWindow": 1050000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 957,
+      "verifiedReply": "Hello! How can I assist you today? Whether you have questions,"
     },
     {
       "id": "openai/gpt-6-luna",
@@ -615,7 +476,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1008,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-6-luna-pro",
@@ -629,7 +492,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1033,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
@@ -643,21 +508,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.7",
-      "displayName": "Grok 4.7",
-      "providerDisplay": "Spacexai",
-      "inputCost": 2,
-      "outputCost": 6,
-      "contextWindow": 500000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1832,
+      "verifiedReply": "Hmm, the user just said \"hallo\" - that's a simple"
     },
     {
       "id": "x-ai/grok-4.7",
@@ -671,7 +524,9 @@
       "featured": true,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1137,
+      "verifiedReply": "Hallo! How can I help you today?"
     },
     {
       "id": "xiaomi/mimo-v2.6-pro",
@@ -685,7 +540,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 758,
+      "verifiedReply": "The user is saying \"hallo\" which is a greeting in several languages"
     },
     {
       "id": "xiaomi/mimo-v2.6-flash",
@@ -699,7 +556,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1292,
+      "verifiedReply": "The user is greeting me in German (\"hallo\" = \"hello\")."
     },
     {
       "id": "stepfun/step-5-preview",
@@ -713,7 +572,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 970,
+      "verifiedReply": "The user said \"hallo\" which is German/Dutch for \"hello\"."
     },
     {
       "id": "z-ai/glm-5.3-flashx",
@@ -727,7 +588,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1820,
+      "verifiedReply": "Alright, the user initiated with 'hallo', which is a German greeting meaning"
     },
     {
       "id": "prism-ml/ternary-bonsai-2-27b",
@@ -741,7 +604,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1556,
+      "verifiedReply": "The user has sent a simple greeting \"hallo\" in German. I should"
     },
     {
       "id": "qwen/qwen3.8-omni-flash",
@@ -755,35 +620,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "quiverai/arrow-2-telos",
-      "displayName": "Arrow 2 Telos",
-      "providerDisplay": "Quiverai",
-      "inputCost": 6,
-      "outputCost": 30,
-      "contextWindow": 131072,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "quiverai/arrow-2",
-      "displayName": "Arrow 2",
-      "providerDisplay": "Quiverai",
-      "inputCost": 4,
-      "outputCost": 20,
-      "contextWindow": 131072,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2659,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "sakana/fugu-ultra-v2",
@@ -797,7 +636,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 4862,
+      "verifiedReply": "Hallo! 👋 Wie"
     },
     {
       "id": "sakana/fugu-max",
@@ -811,7 +652,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 7676,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "nex-agi/nex-n2.5-pro",
@@ -825,7 +668,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2602,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "inclusionai/ling-3.0-flash-vl",
@@ -839,7 +684,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 750,
+      "verifiedReply": "The user has written \"hallo,\" which is a greeting in German (and"
     },
     {
       "id": "inception/mercury-2.5",
@@ -853,21 +700,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-6-astra-fast",
-      "displayName": "GPT-6 Astra (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 20,
-      "outputCost": 100,
-      "contextWindow": 1050000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 712,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/gpt-6-astra",
@@ -881,7 +716,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 835,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-6-astra-pro",
@@ -895,35 +732,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-sante",
-      "displayName": "Ling 3.0 Flash Sante",
-      "providerDisplay": "Inclusionai",
-      "inputCost": 0.075,
-      "outputCost": 0.22,
-      "contextWindow": 256000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "z-ai/glm-5.3-fast",
-      "displayName": "GLM 5.3 Fast",
-      "providerDisplay": "Zhipu",
-      "inputCost": 2.0999999999999996,
-      "outputCost": 6.6000000000000005,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1192,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "z-ai/glm-5.3",
@@ -937,7 +748,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 899,
+      "verifiedReply": "The user just said \"hallo\" - a simple greeting in German (or"
     },
     {
       "id": "z-ai/glm-5.3-flash",
@@ -951,7 +764,9 @@
       "featured": true,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 874,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "meta-llama/muse-spark-1.3",
@@ -965,7 +780,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2918,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "google/gemini-3.8-flash",
@@ -979,21 +796,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "meta-llama/muse-spark-1.3-contributor",
-      "displayName": "Muse Spark 1.3 Contributor",
-      "providerDisplay": "Meta",
-      "inputCost": 0.09999999999999999,
-      "outputCost": 0.19999999999999998,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1774,
+      "verifiedReply": "**Refining Ideas Now**\n\nI'm currently focusing on the initial phases of refinement, actively exploring various approaches and building upon "
     },
     {
       "id": "qwen/qwen3.8-max-0902",
@@ -1007,7 +812,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1926,
+      "verifiedReply": "User said \"hallo\" which is a greeting in German/Dutch. Need"
     },
     {
       "id": "anthropic/claude-fable-5-1",
@@ -1021,7 +828,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1581,
+      "verifiedReply": "Hallo! Wie kann ich dir helf"
     },
     {
       "id": "ibm-granite/granite-4.2-8b",
@@ -1035,7 +844,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 836,
+      "verifiedReply": "Okay, the user wrote \"hallo\". That's German for \"hello\"."
     },
     {
       "id": "tencent/hy4-preview",
@@ -1049,21 +860,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-fin",
-      "displayName": "Ling 3.0 Flash Fin",
-      "providerDisplay": "Inclusionai",
-      "inputCost": 0.075,
-      "outputCost": 0.22,
-      "contextWindow": 256000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1183,
+      "verifiedReply": "Der Nutzer hat „hallo“ gesagt. Ich sollte freundlich"
     },
     {
       "id": "qwen/qwen3.8-flash",
@@ -1077,7 +876,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1234,
+      "verifiedReply": "We need to respond to user: \"hallo\". Need maybe German hello?"
     },
     {
       "id": "deepseek/deepseek-v4-flash-vision-exp",
@@ -1091,7 +892,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2780,
+      "verifiedReply": "We need answer in German likely. User says \"hallo\" simple greeting."
     },
     {
       "id": "qwen/qwen3.8-27b",
@@ -1105,7 +908,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 862,
+      "verifiedReply": "The user has written \"hallo\" which is a greeting. This could be"
     },
     {
       "id": "google/gemini-3.7-flash",
@@ -1119,35 +924,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mixedbread/toast-1",
-      "displayName": "Toast 1",
-      "providerDisplay": "Mixedbread",
-      "inputCost": 0.3,
-      "outputCost": 0.72,
-      "contextWindow": 131000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.6",
-      "displayName": "Grok 4.6",
-      "providerDisplay": "Spacexai",
-      "inputCost": 2,
-      "outputCost": 6,
-      "contextWindow": 500000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2214,
+      "verifiedReply": "**Refining Logic Paths**\n\nI'm currently exploring several distinct logical pathways to optimize the core functionality. My focus is on ident"
     },
     {
       "id": "x-ai/grok-4.6",
@@ -1161,7 +940,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 837,
+      "verifiedReply": "Hallo! How can I help you today?"
     },
     {
       "id": "skydive/glide",
@@ -1175,7 +956,9 @@
       "featured": true,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1044,
+      "verifiedReply": "Hallo — how can I help you today?"
     },
     {
       "id": "deepseek/deepseek-v4-pro-0813",
@@ -1189,7 +972,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 893,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "bytedance-seed/seed-2-1-turbo",
@@ -1203,7 +988,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1776,
+      "verifiedReply": "Got it,User greeted casually."
     },
     {
       "id": "bytedance-seed/seed-2.0-code",
@@ -1217,21 +1004,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "sakana/sakana-namazu",
-      "displayName": "Sakana Namazu",
-      "providerDisplay": "Sakana",
-      "inputCost": 0.95,
-      "outputCost": 4,
-      "contextWindow": 262144,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1770,
+      "verifiedReply": "Got it, the user said \"hallo\" which is German for hello"
     },
     {
       "id": "nvidia/nemotron-3.5-lightning",
@@ -1245,7 +1020,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 972,
+      "verifiedReply": "Here's a thinking process:\n\n1.  **Analyze User Input**: The"
     },
     {
       "id": "meta-llama/muse-glimmer-30b",
@@ -1259,7 +1036,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 970,
+      "verifiedReply": "hallo\n\nWe need respond. User says \"hallo\"."
     },
     {
       "id": "upstage/solar-pro4",
@@ -1273,7 +1052,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1444,
+      "verifiedReply": "Hallo! 👋 Wie kann ich dir heute helfen?"
     },
     {
       "id": "inclusionai/ling-3.0-flash",
@@ -1287,7 +1068,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1153,
+      "verifiedReply": "The user has written \"hallo,\" which is a greeting in German (and"
     },
     {
       "id": "meta-llama/muse-spark-1.2",
@@ -1301,35 +1084,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "meta-llama/muse-spark-1.2-contributor",
-      "displayName": "Muse Spark 1.2 Contributor",
-      "providerDisplay": "Meta",
-      "inputCost": 0.09999999999999999,
-      "outputCost": 0.19999999999999998,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "sakana/namazu",
-      "displayName": "Sakana Namazu",
-      "providerDisplay": "Sakana",
-      "inputCost": 0.95,
-      "outputCost": 4,
-      "contextWindow": 256000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1433,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "qwen/qwen3.8-max",
@@ -1343,7 +1100,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1688,
+      "verifiedReply": "We need answer to user \"hallo\". User likely German/Dutch greeting."
     },
     {
       "id": "qwen/qwen3.8-2.4t-a95b",
@@ -1357,7 +1116,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1179,
+      "verifiedReply": "We need respond to user: \"hallo\". User likely German/ informal hello"
     },
     {
       "id": "thinkingmachines/inkling-small",
@@ -1371,7 +1132,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2245,
+      "verifiedReply": "The user said \"hallo\" which is a greeting in German ("
     },
     {
       "id": "qwen/qwen3.7-flash",
@@ -1385,21 +1148,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "moonshotai/kimi-k3-fast",
-      "displayName": "Kimi K3 Fast",
-      "providerDisplay": "Moonshot",
-      "inputCost": 4.5,
-      "outputCost": 22.5,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1190,
+      "verifiedReply": "Here's a thinking process:\n\n1.  **Analyze User Input:**"
     },
     {
       "id": "moonshotai/kimi-k3",
@@ -1413,7 +1164,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 955,
+      "verifiedReply": "The user just said \"hallo\" which is German/D"
     },
     {
       "id": "anthropic/claude-opus-5-fast",
@@ -1427,7 +1180,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1061,
+      "verifiedReply": "The user just said \"hallo,\" which looks like a simple German greeting."
     },
     {
       "id": "anthropic/claude-opus-5",
@@ -1441,7 +1196,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 4135,
+      "verifiedReply": "The user just said a simple \"hallo\" greeting."
     },
     {
       "id": "anthropic/claude-sonnet-5",
@@ -1455,7 +1212,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2349,
+      "verifiedReply": "Hallo! Wie kann ich dir helf"
     },
     {
       "id": "google/gemini-3.6-flash",
@@ -1469,7 +1228,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1727,
+      "verifiedReply": "**Refining Logic Paths**\n\nI'm currently exploring several distinct logical pathways to optimize the core functionality. My focus is on ident"
     },
     {
       "id": "meituan/longcat-2.0",
@@ -1483,7 +1244,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2347,
+      "verifiedReply": "We are asked: \"hallo\" which is a simple greeting. The"
     },
     {
       "id": "poolside/laguna-s-2.1",
@@ -1497,7 +1260,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 906,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "openrouter/auto-beta",
@@ -1512,7 +1277,9 @@
       "outputTypes": [
         "text",
         "image"
-      ]
+      ],
+      "verifiedLatencyMs": 1328,
+      "verifiedReply": "Reflecting on the user's simple \"hallo\" greeting, which likely corresponds"
     },
     {
       "id": "thinkingmachines/inkling",
@@ -1526,21 +1293,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.6-sol-fast",
-      "displayName": "GPT 5.6 Sol (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 8,
-      "outputCost": 40,
-      "contextWindow": 1050000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 690,
+      "verifiedReply": "The user said \"hallo\" which is German (and also Dutch"
     },
     {
       "id": "openai/gpt-5.6-sol",
@@ -1554,7 +1309,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 964,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.6-sol-pro",
@@ -1568,21 +1325,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.6-terra-fast",
-      "displayName": "GPT 5.6 Terra (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 4,
-      "outputCost": 24,
-      "contextWindow": 1050000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 913,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.6-terra",
@@ -1596,7 +1341,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 985,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.6-terra-pro",
@@ -1610,7 +1357,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 964,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "meta-llama/muse-spark-1.1",
@@ -1624,21 +1373,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.6-luna-fast",
-      "displayName": "GPT 5.6 Luna (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.39999999999999997,
-      "outputCost": 2.4,
-      "contextWindow": 1050000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1447,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/gpt-5.6-luna",
@@ -1652,7 +1389,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1294,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.6-luna-pro",
@@ -1666,21 +1405,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.5",
-      "displayName": "Grok 4.5",
-      "providerDisplay": "Spacexai",
-      "inputCost": 2,
-      "outputCost": 6,
-      "contextWindow": 500000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1264,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "x-ai/grok-4.5",
@@ -1694,7 +1421,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 977,
+      "verifiedReply": "Hallo! How can I help you today?"
     },
     {
       "id": "aion-labs/aion-3.0",
@@ -1708,7 +1437,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1639,
+      "verifiedReply": "The user wrote \"hallo\" - a simple greeting in German/Dutch. I should"
     },
     {
       "id": "aion-labs/aion-3.0-mini",
@@ -1722,7 +1453,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1154,
+      "verifiedReply": "I must ensure the response is safe for the user, not for me.\n\nThe"
     },
     {
       "id": "tencent/hy3-preview",
@@ -1736,7 +1469,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2314,
+      "verifiedReply": "The user just said \"hallo\" which is a greeting in German (and"
     },
     {
       "id": "tencent/hy3",
@@ -1750,7 +1485,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1649,
+      "verifiedReply": "The user wrote \"hallo\" which is \"hello\" in German (and"
     },
     {
       "id": "poolside/laguna-xs-2.1",
@@ -1764,7 +1501,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 759,
+      "verifiedReply": "Okay, the user just said \"hallo\". That's a common greeting,"
     },
     {
       "id": "anthropic/claude-fable-5",
@@ -1778,21 +1517,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "z-ai/glm-5.2-fast",
-      "displayName": "GLM 5.2 Fast",
-      "providerDisplay": "Zhipu",
-      "inputCost": 2.8,
-      "outputCost": 8.8,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2112,
+      "verifiedReply": "They greeted me with \"hallo,\" which looks like German or Dutch."
     },
     {
       "id": "z-ai/glm-5.2",
@@ -1806,21 +1533,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "bytedance/seed-2.1-turbo",
-      "displayName": "Seed 2.1 Turbo",
-      "providerDisplay": "Bytedance",
-      "inputCost": 0.5,
-      "outputCost": 2.5,
-      "contextWindow": 262144,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1063,
+      "verifiedReply": "1.  **Analyze the Input:** The user said \"hallo\","
     },
     {
       "id": "sakana/fugu-ultra",
@@ -1834,7 +1549,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 5979,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?\n</response"
     },
     {
       "id": "google/gemini-3-pro-image",
@@ -1849,21 +1566,9 @@
       "outputTypes": [
         "image",
         "text"
-      ]
-    },
-    {
-      "id": "google/gemini-3-flash",
-      "displayName": "Gemini 3 Flash",
-      "providerDisplay": "Google",
-      "inputCost": 0.5,
-      "outputCost": 3,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2055,
+      "verifiedReply": "**Designing a Visual Greeting**\n\nI'm currently focusing on conceptualizing the core elements of a visual greeting. My aim is to establish a "
     },
     {
       "id": "google/gemini-3-flash-preview",
@@ -1877,21 +1582,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "moonshotai/kimi-k2.7-code-highspeed",
-      "displayName": "Kimi K2.7 Code High Speed",
-      "providerDisplay": "Moonshot",
-      "inputCost": 1.9,
-      "outputCost": 8,
-      "contextWindow": 262144,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 5794,
+      "verifiedReply": "Hallo! Hoe kan ik je vandaag helpen?"
     },
     {
       "id": "openrouter/fusion",
@@ -1905,7 +1598,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3763,
+      "verifiedReply": "Hallo! Wie kann ich dir heute"
     },
     {
       "id": "moonshotai/kimi-k2.7-code",
@@ -1919,7 +1614,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1630,
+      "verifiedReply": "We need respond to user's greeting 'hallo'. We should be friendly."
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -1933,7 +1630,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 8670,
+      "verifiedReply": "The user said \"hallo\", which is German for \"hello\".\nI should"
     },
     {
       "id": "qwen/qwen3.7-plus",
@@ -1947,7 +1646,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3403,
+      "verifiedReply": "Thinking Process:\n\n1.  **Analyze the input:** The user said"
     },
     {
       "id": "minimax/minimax-m3",
@@ -1961,21 +1662,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "anthropic/claude-opus-4-8-fast",
-      "displayName": "Claude Opus 4.8 (Fast)",
-      "providerDisplay": "Anthropic",
-      "inputCost": 10,
-      "outputCost": 50,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 813,
+      "verifiedReply": "The user said \"hallo\" which is German for \"hello\". I"
     },
     {
       "id": "anthropic/claude-opus-4-8",
@@ -1989,21 +1678,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "google/gemini-3.1-pro-preview-customtools",
-      "displayName": "Gemini 3.1 Pro Preview Custom Tools",
-      "providerDisplay": "Google",
-      "inputCost": 2,
-      "outputCost": 12,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1491,
+      "verifiedReply": "Hallo! Wie kann ich dir helf"
     },
     {
       "id": "google/gemini-3.1-pro-preview",
@@ -2017,21 +1694,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "google/gemini-3.1-flash-image",
-      "displayName": "Nano Banana 2",
-      "providerDisplay": "Google",
-      "inputCost": 0.5,
-      "outputCost": 60,
-      "contextWindow": 0,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "image"
-      ]
+      ],
+      "verifiedLatencyMs": 2392,
+      "verifiedReply": "**Refining Key Themes**\n\nI'm currently distilling the core ideas from the provided text. My focus is on identifying the most impactful conce"
     },
     {
       "id": "google/gemini-3.1-flash-lite",
@@ -2045,21 +1710,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "google/gemini-3.1-flash-lite-preview",
-      "displayName": "Gemini 3.1 Flash Lite Preview",
-      "providerDisplay": "Google",
-      "inputCost": 0.25,
-      "outputCost": 1.5,
-      "contextWindow": 1048576,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1271,
+      "verifiedReply": "Hallo! Wie kann ich dir heute helfen?"
     },
     {
       "id": "stepfun/step-3.7-flash",
@@ -2073,7 +1726,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2401,
+      "verifiedReply": "Benutzer hat nur \"hallo\" geschrieben. Zuerst muss"
     },
     {
       "id": "qwen/qwen3.7-max",
@@ -2087,21 +1742,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-build-0.1",
-      "displayName": "Grok Build 0.1",
-      "providerDisplay": "Spacexai",
-      "inputCost": 1,
-      "outputCost": 2,
-      "contextWindow": 256000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1570,
+      "verifiedReply": "Thinking Process:\n\n1.  **Analyze the input:** The user said"
     },
     {
       "id": "x-ai/grok-build-0.1",
@@ -2115,7 +1758,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1048,
+      "verifiedReply": "Hallo! 👋\n\nWie geht's? Was kann ich für dich tun"
     },
     {
       "id": "google/gemini-3.5-flash",
@@ -2129,7 +1774,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2591,
+      "verifiedReply": "**Refining the Approach**\n\nI'm currently focusing on refining the analytical framework. My recent efforts have centered on identifying nuanc"
     },
     {
       "id": "google/gemini-3.5-flash-lite",
@@ -2143,7 +1790,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1027,
+      "verifiedReply": "Hallo! Wie kann ich dir heute helfen?"
     },
     {
       "id": "openai/gpt-chat-latest",
@@ -2157,51 +1806,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-audio",
-      "displayName": "GPT Audio",
-      "providerDisplay": "OpenAI",
-      "inputCost": 2.5,
-      "outputCost": 10,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text",
-        "audio"
-      ]
-    },
-    {
-      "id": "openai/gpt-audio-mini",
-      "displayName": "GPT Audio Mini",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.6,
-      "outputCost": 2.4,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text",
-        "audio"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.3",
-      "displayName": "Grok 4.3",
-      "providerDisplay": "Spacexai",
-      "inputCost": 1.25,
-      "outputCost": 2.5,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1035,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir helfen?"
     },
     {
       "id": "x-ai/grok-4.3",
@@ -2215,7 +1822,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1013,
+      "verifiedReply": "Hallo! 👋 Wie geht's?"
     },
     {
       "id": "mistralai/mistral-medium-3.5",
@@ -2229,7 +1838,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 943,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?\n\nFalls du"
     },
     {
       "id": "qwen/qwen3.6-flash",
@@ -2243,7 +1854,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1418,
+      "verifiedReply": "Here's a thinking process:\n\n1.  **Analyze User Input:**"
     },
     {
       "id": "qwen/qwen3.6-35b-a3b",
@@ -2257,7 +1870,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 957,
+      "verifiedReply": "Here's a thinking process:\n\n1.  **Analyze User Input:**"
     },
     {
       "id": "openai/gpt-5.5-pro",
@@ -2271,21 +1886,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.5-fast",
-      "displayName": "GPT 5.5 (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 12.5,
-      "outputCost": 75,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1037,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/gpt-5.5",
@@ -2299,7 +1902,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 914,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "deepseek/deepseek-v4-pro",
@@ -2313,7 +1918,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 4414,
+      "verifiedReply": "We need to parse the user's input. The user said \"hallo\"."
     },
     {
       "id": "deepseek/deepseek-v4-flash",
@@ -2327,7 +1934,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 11454,
+      "verifiedReply": "Hallo! Der Nutzer hat mich mit \"hallo\" auf Deutsch beg"
     },
     {
       "id": "deepseek/deepseek-v4-flash-0731",
@@ -2341,7 +1950,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2344,
+      "verifiedReply": "We need answer in German likely. User says \"hallo\". Need respond friendly"
     },
     {
       "id": "xiaomi/mimo-v2.5-pro",
@@ -2355,7 +1966,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 6634,
+      "verifiedReply": "Hmm, the user just said \"hallo\" which seems like a simple"
     },
     {
       "id": "xiaomi/mimo-v2.5",
@@ -2369,7 +1982,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3852,
+      "verifiedReply": "We are given a short message \"hallo\". The user likely wants to"
     },
     {
       "id": "qwen/qwen3.6-27b",
@@ -2383,7 +1998,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1081,
+      "verifiedReply": "Here's a thinking process:\n\n1.  **Analyze User Input:**"
     },
     {
       "id": "openai/gpt-image-2",
@@ -2397,7 +2014,9 @@
       "featured": false,
       "outputTypes": [
         "image"
-      ]
+      ],
+      "verifiedLatencyMs": 13909,
+      "verifiedReply": "[Image Model OK]"
     },
     {
       "id": "openrouter/pareto-code",
@@ -2411,7 +2030,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1801,
+      "verifiedReply": "Hallo! Wie kann ich dir helf"
     },
     {
       "id": "moonshotai/kimi-k2.6",
@@ -2425,7 +2046,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2757,
+      "verifiedReply": "The user said \"hallo\" which is a greeting in Dutch and German ("
     },
     {
       "id": "anthropic/claude-opus-4-7",
@@ -2439,7 +2062,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2872,
+      "verifiedReply": "Hallo! 👋 Wie kann ich"
     },
     {
       "id": "z-ai/glm-5.1",
@@ -2453,7 +2078,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 887,
+      "verifiedReply": "1.  **Analyze the Input:**\n    *   Input: \""
     },
     {
       "id": "qwen/qwen3.6-plus",
@@ -2467,21 +2094,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "google/gemma-4-31b-it",
-      "displayName": "Gemma 4 31B IT",
-      "providerDisplay": "Google",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 0.39999999999999997,
-      "contextWindow": 262144,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1209,
+      "verifiedReply": "Here's a thinking process:\n\n1.  **Analyze User Input:**"
     },
     {
       "id": "google/gemma-4-26b-a4b-it",
@@ -2495,7 +2110,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1084,
+      "verifiedReply": "Hallo! Wie kann ich dir heute helfen?"
     },
     {
       "id": "z-ai/glm-5v-turbo",
@@ -2509,7 +2126,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1717,
+      "verifiedReply": "The user has greeted me with \"hallo,\" which is German for \"hello"
     },
     {
       "id": "arcee-ai/trinity-large-thinking",
@@ -2523,7 +2142,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 900,
+      "verifiedReply": "Hmm, the user just said \"hallo\" which is a casual greeting."
     },
     {
       "id": "x-ai/grok-4.20",
@@ -2537,7 +2158,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 931,
+      "verifiedReply": "Hallo! 😊  \n\nWas geht ab? Wie geht's dir?"
     },
     {
       "id": "rekaai/reka-edge",
@@ -2551,21 +2174,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "minimax/minimax-m2.7-highspeed",
-      "displayName": "MiniMax M2.7 High Speed",
-      "providerDisplay": "MiniMax",
-      "inputCost": 0.6,
-      "outputCost": 2.4,
-      "contextWindow": 204800,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 956,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen heute helfen?"
     },
     {
       "id": "minimax/minimax-m2.7",
@@ -2579,21 +2190,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mistralai/mistral-small-2603",
-      "displayName": "Mistral Small 4",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
-      "contextWindow": 256000,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1248,
+      "verifiedReply": "The user said \"hallo\". This is a greeting. The conversation"
     },
     {
       "id": "z-ai/glm-5-turbo",
@@ -2607,7 +2206,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 5666,
+      "verifiedReply": "1.  **Analyze the Input**: The user said \"hallo\".\nlo\".\nlo\"."
     },
     {
       "id": "z-ai/glm-5",
@@ -2621,49 +2222,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.20-non-reasoning-beta",
-      "displayName": "Grok 4.20 Beta Non-Reasoning",
-      "providerDisplay": "Spacexai",
-      "inputCost": 1.25,
-      "outputCost": 2.5,
-      "contextWindow": 2000000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.20-reasoning-beta",
-      "displayName": "Grok 4.20 Beta Reasoning",
-      "providerDisplay": "Spacexai",
-      "inputCost": 1.25,
-      "outputCost": 2.5,
-      "contextWindow": 2000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.20-multi-agent-beta",
-      "displayName": "Grok 4.20 Multi Agent Beta",
-      "providerDisplay": "Spacexai",
-      "inputCost": 1.25,
-      "outputCost": 2.5,
-      "contextWindow": 2000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2310,
+      "verifiedReply": "The user said \"hallo\".\nThis is a German greeting, equivalent to \""
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b",
@@ -2677,49 +2238,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.20-multi-agent",
-      "displayName": "Grok 4.20 Multi-Agent",
-      "providerDisplay": "Spacexai",
-      "inputCost": 1.25,
-      "outputCost": 2.5,
-      "contextWindow": 2000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.20-non-reasoning",
-      "displayName": "Grok 4.20 Non-Reasoning",
-      "providerDisplay": "Spacexai",
-      "inputCost": 1.25,
-      "outputCost": 2.5,
-      "contextWindow": 2000000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.20-reasoning",
-      "displayName": "Grok 4.20 Reasoning",
-      "providerDisplay": "Spacexai",
-      "inputCost": 1.25,
-      "outputCost": 2.5,
-      "contextWindow": 2000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1023,
+      "verifiedReply": "Okay, the user said \"hallo\", which is German for \"hello\"."
     },
     {
       "id": "bytedance-seed/seed-2.0-lite",
@@ -2733,7 +2254,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1838,
+      "verifiedReply": "Got it,User said hallo, a German/Dutch greeting."
     },
     {
       "id": "bytedance-seed/seed-2.0-mini",
@@ -2747,7 +2270,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1564,
+      "verifiedReply": "Got it, let's see. The user said \"hallo\" which"
     },
     {
       "id": "qwen/qwen3.5-9b",
@@ -2761,7 +2286,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1076,
+      "verifiedReply": "Thinking Process:\n\n1.  **Analyze the Input:**\n    *"
     },
     {
       "id": "openai/gpt-5.4-pro",
@@ -2775,21 +2302,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.4-fast",
-      "displayName": "GPT 5.4 (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 5,
-      "outputCost": 30,
-      "contextWindow": 1050000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1271,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.4",
@@ -2803,21 +2318,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.4-mini-fast",
-      "displayName": "GPT 5.4 Mini (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 1.5,
-      "outputCost": 9,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1111,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.4-mini",
@@ -2831,7 +2334,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1032,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.4-nano",
@@ -2845,7 +2350,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1081,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir helfen?"
     },
     {
       "id": "qwen/qwen3.5-122b-a10b",
@@ -2859,7 +2366,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1452,
+      "verifiedReply": "Hallo! Wie geht es dir? Wie kann ich dir heute helfen?"
     },
     {
       "id": "qwen/qwen3.5-27b",
@@ -2873,7 +2382,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 972,
+      "verifiedReply": "Thinking Process:\n\n1.  **Analyze the Input:**\n    *"
     },
     {
       "id": "qwen/qwen3.5-35b-a3b",
@@ -2887,7 +2398,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1034,
+      "verifiedReply": "Hallo! 👋 Wie kann ich dir heute helfen?"
     },
     {
       "id": "qwen/qwen3.5-flash-02-23",
@@ -2901,7 +2414,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2793,
+      "verifiedReply": "Thinking Process:\n\n1.  **Analyze the Input:**\n    *"
     },
     {
       "id": "inception/mercury-2",
@@ -2915,21 +2430,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen3.5-flash",
-      "displayName": "Qwen 3.5 Flash",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.09999999999999999,
-      "outputCost": 0.39999999999999997,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 870,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "aion-labs/aion-2.0",
@@ -2943,7 +2446,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1222,
+      "verifiedReply": "I always output in the same language as the user's query. The query is"
     },
     {
       "id": "qwen/qwen3.5-397b-a17b",
@@ -2957,21 +2462,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen3.5-plus",
-      "displayName": "Qwen 3.5 Plus",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.39999999999999997,
-      "outputCost": 2.4,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2334,
+      "verifiedReply": "Thinking Process:\n\n1.  **Analyze the Input:**\n    *"
     },
     {
       "id": "qwen/qwen3.5-plus-20260420",
@@ -2985,7 +2478,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 8055,
+      "verifiedReply": "Here's a thinking process:\n\n1.  **Analyze User Input:**"
     },
     {
       "id": "qwen/qwen3.5-plus-02-15",
@@ -2999,21 +2494,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "minimax/minimax-m2.5-highspeed",
-      "displayName": "MiniMax M2.5 High Speed",
-      "providerDisplay": "MiniMax",
-      "inputCost": 0.6,
-      "outputCost": 2.4,
-      "contextWindow": 204800,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1346,
+      "verifiedReply": "Thinking Process:\n\n1.  **Analyze the Input:**\n    *"
     },
     {
       "id": "minimax/minimax-m2.5",
@@ -3027,7 +2510,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 827,
+      "verifiedReply": "The user said \"hallo\". This is a simple greeting in German. I"
     },
     {
       "id": "anthropic/claude-opus-4-6",
@@ -3041,7 +2526,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3641,
+      "verifiedReply": "Hallo! 👋 Wie geht es dir?"
     },
     {
       "id": "anthropic/claude-sonnet-4-6",
@@ -3055,21 +2542,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.3-codex-fast",
-      "displayName": "GPT 5.3 Codex (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 3.5,
-      "outputCost": 28,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2316,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.3-codex",
@@ -3083,7 +2558,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3145,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir helfen?"
     },
     {
       "id": "stepfun/step-3.5-flash",
@@ -3097,7 +2574,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1457,
+      "verifiedReply": "Hmm, the user just said \"hallo\" which is clearly a greeting"
     },
     {
       "id": "upstage/solar-pro-3",
@@ -3111,7 +2590,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 4562,
+      "verifiedReply": "Hello! How can I help you today?"
     },
     {
       "id": "moonshotai/kimi-k2.5",
@@ -3125,35 +2606,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen3-max-thinking",
-      "displayName": "Qwen 3 Max Thinking",
-      "providerDisplay": "Qwen",
-      "inputCost": 1.2,
-      "outputCost": 6,
-      "contextWindow": 262144,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "z-ai/glm-4.7-flashx",
-      "displayName": "GLM 4.7 FlashX",
-      "providerDisplay": "Zhipu",
-      "inputCost": 0.06,
-      "outputCost": 0.39999999999999997,
-      "contextWindow": 200000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3818,
+      "verifiedReply": "Hallo! Wie geht es dir? Ich bin Kimi, ein"
     },
     {
       "id": "minimax/minimax-m2.1",
@@ -3167,21 +2622,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "minimax/minimax-m2.1-lightning",
-      "displayName": "MiniMax M2.1 Lightning",
-      "providerDisplay": "MiniMax",
-      "inputCost": 0.3,
-      "outputCost": 2.4,
-      "contextWindow": 204800,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1741,
+      "verifiedReply": "The user says \"hallo\" (which is \"hello\" in"
     },
     {
       "id": "bytedance-seed/seed-1.6",
@@ -3195,7 +2638,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1793,
+      "verifiedReply": "Got it, the user said \"hallo\". First, I need to"
     },
     {
       "id": "bytedance-seed/seed-1.6-flash",
@@ -3209,7 +2654,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1507,
+      "verifiedReply": "Got it, the user said \"hallo\" which is a greeting"
     },
     {
       "id": "z-ai/glm-4.7",
@@ -3223,7 +2670,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1274,
+      "verifiedReply": "1.  **Analyze the User's Input:**\n    *   Input"
     },
     {
       "id": "z-ai/glm-4.7-flash",
@@ -3237,7 +2686,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1528,
+      "verifiedReply": "1.  **Analyze the input:**\n    *   User said:"
     },
     {
       "id": "openai/gpt-5.2-pro",
@@ -3251,35 +2702,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.2-fast",
-      "displayName": "GPT 5.2 (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 3.5,
-      "outputCost": 28,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.2-codex",
-      "displayName": "GPT 5.2 Codex",
-      "providerDisplay": "OpenAI",
-      "inputCost": 1.75,
-      "outputCost": 14,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1020,
+      "verifiedReply": "Hallo! Wobei kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-5.2",
@@ -3293,21 +2718,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.2-chat",
-      "displayName": "GPT-5.2 Chat",
-      "providerDisplay": "OpenAI",
-      "inputCost": 1.75,
-      "outputCost": 14,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1028,
+      "verifiedReply": "Hallo! Wobei kann ich dir helfen?"
     },
     {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
@@ -3321,7 +2734,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1026,
+      "verifiedReply": "The user wrote \"hallo\". That's just greeting. I need to respond"
     },
     {
       "id": "mistralai/devstral-2512",
@@ -3335,7 +2750,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1122,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?"
     },
     {
       "id": "relace/relace-search",
@@ -3349,7 +2766,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1014,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "z-ai/glm-4.6v",
@@ -3363,35 +2782,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mistralai/mistral-large-3",
-      "displayName": "Mistral Large 3",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.5,
-      "outputCost": 1.5,
-      "contextWindow": 256000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "amazon/nova-2-lite",
-      "displayName": "Nova 2 Lite",
-      "providerDisplay": "Amazon",
-      "inputCost": 0.3,
-      "outputCost": 2.5,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3166,
+      "verifiedReply": "The user has greeted me with \"hallo,\" which is German for \""
     },
     {
       "id": "amazon/nova-2-lite-v1",
@@ -3405,21 +2798,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mistralai/ministral-14b",
-      "displayName": "Ministral 14B",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 0.19999999999999998,
-      "contextWindow": 256000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2944,
+      "verifiedReply": "Hallo! Wie kann ich dir heute helfen?"
     },
     {
       "id": "mistralai/ministral-14b-2512",
@@ -3433,21 +2814,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-oss-safeguard-120b",
-      "displayName": "GPT OSS Safeguard 120B",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
-      "contextWindow": 128000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1601,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?\n\nFrag einfach"
     },
     {
       "id": "mistralai/ministral-8b-2512",
@@ -3461,7 +2830,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1072,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen? Hast du eine"
     },
     {
       "id": "mistralai/ministral-3b-2512",
@@ -3475,21 +2846,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "deepseek/deepseek-v3.2-thinking",
-      "displayName": "DeepSeek V3.2 Thinking",
-      "providerDisplay": "DeepSeek",
-      "inputCost": 0.62,
-      "outputCost": 1.85,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 896,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen? Ob du Fragen"
     },
     {
       "id": "deepseek/deepseek-v3.2",
@@ -3503,21 +2862,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mistralai/mistral-large-2512",
-      "displayName": "Mistral Large 3 2512",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.5,
-      "outputCost": 1.5,
-      "contextWindow": 262144,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1063,
+      "verifiedReply": "Hallo! 🙂  \nWie geht es dir?"
     },
     {
       "id": "anthropic/claude-opus-4-5",
@@ -3531,7 +2878,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1782,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "anthropic/claude-sonnet-4-5",
@@ -3545,7 +2894,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1220,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "anthropic/claude-haiku-4-5",
@@ -3559,63 +2910,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.1-codex-max",
-      "displayName": "GPT 5.1 Codex Max",
-      "providerDisplay": "OpenAI",
-      "inputCost": 1.25,
-      "outputCost": 10,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.1-fast-non-reasoning",
-      "displayName": "Grok 4.1 Fast Non-Reasoning",
-      "providerDisplay": "Spacexai",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 0.5,
-      "contextWindow": 1000000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "spacexai/grok-4.1-fast-reasoning",
-      "displayName": "Grok 4.1 Fast Reasoning",
-      "providerDisplay": "Spacexai",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 0.5,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.1-thinking-fast",
-      "displayName": "GPT 5.1 Thinking (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 2.5,
-      "outputCost": 20,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2322,
+      "verifiedReply": "Hallo! 👋 Wie geht es dir?"
     },
     {
       "id": "openai/gpt-5.1",
@@ -3629,49 +2926,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.1-thinking",
-      "displayName": "GPT 5.1 Thinking",
-      "providerDisplay": "OpenAI",
-      "inputCost": 1.25,
-      "outputCost": 10,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.1-codex",
-      "displayName": "GPT-5.1-Codex",
-      "providerDisplay": "OpenAI",
-      "inputCost": 1.25,
-      "outputCost": 10,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5.1-codex-mini",
-      "displayName": "GPT 5.1 Codex Mini",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.25,
-      "outputCost": 2,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1136,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen"
     },
     {
       "id": "moonshotai/kimi-k2-thinking",
@@ -3685,7 +2942,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3758,
+      "verifiedReply": "The user said \"hallo\" which is a greeting in German (and"
     },
     {
       "id": "moonshotai/kimi-k2",
@@ -3699,21 +2958,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "amazon/nova-premier-v1",
-      "displayName": "Nova Premier 1.0",
-      "providerDisplay": "Amazon",
-      "inputCost": 2.5,
-      "outputCost": 12.5,
-      "contextWindow": 1000000,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2453,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "mistralai/voxtral-small-24b-2507",
@@ -3727,35 +2974,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-oss-safeguard-20b",
-      "displayName": "GPT OSS Safeguard 20B",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.075,
-      "outputCost": 0.3,
-      "contextWindow": 131072,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "nvidia/nemotron-nano-12b-v2-vl",
-      "displayName": "Nvidia Nemotron Nano 12B V2 VL",
-      "providerDisplay": "NVIDIA",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 0.6,
-      "contextWindow": 131072,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1022,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen heute helfen?"
     },
     {
       "id": "minimax/minimax-m2",
@@ -3769,7 +2990,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1057,
+      "verifiedReply": "The user mentioned \"hallo,\" which is the German greeting for \"hello.\""
     },
     {
       "id": "qwen/qwen3-vl-8b-instruct",
@@ -3783,21 +3006,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "interfaze/interfaze-beta",
-      "displayName": "Interfaze Beta",
-      "providerDisplay": "Interfaze",
-      "inputCost": 1.5,
-      "outputCost": 3.5,
-      "contextWindow": 1000000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 976,
+      "verifiedReply": "Hallo! 😊  \nWie kann ich dir heute helfen?  \nOb Fragen,"
     },
     {
       "id": "openai/gpt-5-pro",
@@ -3811,35 +3022,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5-fast",
-      "displayName": "GPT-5 (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 2.5,
-      "outputCost": 20,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5-codex",
-      "displayName": "GPT-5-Codex",
-      "providerDisplay": "OpenAI",
-      "inputCost": 1.25,
-      "outputCost": 10,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1108,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/gpt-5",
@@ -3853,21 +3038,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-5-mini-fast",
-      "displayName": "GPT-5 mini (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.44999999999999996,
-      "outputCost": 3.5999999999999996,
-      "contextWindow": 400000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1094,
+      "verifiedReply": "**Responding to greetings**\n\nI see that the user greeted me with \"hallo,\" which is a friendly German greeting! I should respond in a way tha"
     },
     {
       "id": "openai/gpt-5-mini",
@@ -3881,7 +3054,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 7861,
+      "verifiedReply": "**Interpreting Greetings**\n\nThe user said \"hallo,\" which I recognize as a greeting in German. It seems like they’re simply trying to say hel"
     },
     {
       "id": "openai/gpt-5-nano",
@@ -3895,7 +3070,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1076,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-thinking",
@@ -3909,7 +3086,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1834,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen? 😊"
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -3923,7 +3102,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 7831,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?"
     },
     {
       "id": "z-ai/glm-4.6",
@@ -3937,7 +3118,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1511,
+      "verifiedReply": "The user greeted with \"hallo,\" which is German for \"hello"
     },
     {
       "id": "deepseek/deepseek-v3.2-exp",
@@ -3951,7 +3134,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 7893,
+      "verifiedReply": "Hallo! 👋 Wie kann ich dir heute helfen?"
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -3965,21 +3150,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen3-vl-instruct",
-      "displayName": "Qwen3 VL 235B A22B Instruct",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 0.88,
-      "contextWindow": 262144,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2243,
+      "verifiedReply": "Hallo! 😊  \nWie kann ich dir helfen?  \nOb Frage, Ide"
     },
     {
       "id": "deepseek/deepseek-v3.1-terminus",
@@ -3993,7 +3166,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1298,
+      "verifiedReply": "Hallo! 👋 \n\nWie geht es dir? (How are you?)"
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-thinking",
@@ -4007,7 +3182,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 971,
+      "verifiedReply": "Okay, the user sent \"hallo\". That's German for hello. Maybe"
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
@@ -4021,7 +3198,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2523,
+      "verifiedReply": "Hallo! 😊  \nWie kann ich dir heute helfen?"
     },
     {
       "id": "moonshotai/kimi-k2-0905",
@@ -4035,35 +3214,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "bytedance/seed-1.8",
-      "displayName": "Bytedance Seed 1.8",
-      "providerDisplay": "Bytedance",
-      "inputCost": 0.25,
-      "outputCost": 2,
-      "contextWindow": 256000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "bytedance/seed-1.6",
-      "displayName": "Seed 1.6",
-      "providerDisplay": "Bytedance",
-      "inputCost": 0.25,
-      "outputCost": 2,
-      "contextWindow": 256000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1150,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "deepseek/deepseek-chat-v3.1",
@@ -4077,35 +3230,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "deepseek/deepseek-v3.1",
-      "displayName": "DeepSeek V3.1",
-      "providerDisplay": "DeepSeek",
-      "inputCost": 0.25,
-      "outputCost": 0.95,
-      "contextWindow": 163840,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "nvidia/nemotron-nano-9b-v2",
-      "displayName": "Nvidia Nemotron Nano 9B V2",
-      "providerDisplay": "NVIDIA",
-      "inputCost": 0.06,
-      "outputCost": 0.22999999999999998,
-      "contextWindow": 131072,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 874,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen? 😊"
     },
     {
       "id": "mistralai/mistral-medium-3.1",
@@ -4119,7 +3246,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 5357,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?\n\n(Hello!"
     },
     {
       "id": "z-ai/glm-4.5v",
@@ -4133,7 +3262,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1529,
+      "verifiedReply": "The user has initiated the conversation with \"hallo,\" which is German for \""
     },
     {
       "id": "anthropic/claude-opus-4-1",
@@ -4147,35 +3278,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-oss-120b",
-      "displayName": "GPT OSS 120B",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
-      "contextWindow": 131072,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-oss-20b",
-      "displayName": "GPT OSS 20B",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.018,
-      "outputCost": 0.09,
-      "contextWindow": 131072,
-      "reasoning": true,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 9902,
+      "verifiedReply": "Hallo! Wie geht es Ihnen heute? (Hello"
     },
     {
       "id": "mistralai/codestral-2508",
@@ -4189,21 +3294,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen3-coder-30b-a3b",
-      "displayName": "Qwen 3 Coder 30B A3B Instruct",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
-      "contextWindow": 262144,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1143,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen? 😊"
     },
     {
       "id": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -4217,7 +3310,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1421,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -4231,7 +3326,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1822,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen? 😊"
     },
     {
       "id": "z-ai/glm-4.5",
@@ -4245,7 +3342,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3691,
+      "verifiedReply": "1.  **Analyze the Input:** The user said \"hallo\",\",\","
     },
     {
       "id": "z-ai/glm-4.5-air",
@@ -4259,7 +3358,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1219,
+      "verifiedReply": "The user initiated with \"hallo,\" a German greeting meaning \"hello"
     },
     {
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -4273,7 +3374,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1104,
+      "verifiedReply": "Here's a thinking process:\n\n1.  **Analyze User Input:**"
     },
     {
       "id": "qwen/qwen3-235b-a22b-2507",
@@ -4287,21 +3390,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen3-coder",
-      "displayName": "Qwen3 Coder 480B A35B Instruct",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.3,
-      "outputCost": 1,
-      "contextWindow": 262144,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1014,
+      "verifiedReply": "Hallo! Wie kann ich dir heute helfen? 😊"
     },
     {
       "id": "qwen/qwen3-coder-flash",
@@ -4315,7 +3406,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1554,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "qwen/qwen3-coder-next",
@@ -4329,7 +3422,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 992,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?"
     },
     {
       "id": "mistralai/mistral-small-3.2-24b-instruct",
@@ -4343,7 +3438,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 815,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir helfen?"
     },
     {
       "id": "minimax/minimax-m1",
@@ -4357,7 +3454,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1505,
+      "verifiedReply": "The user greeted me with \"hallo\" which is German for \""
     },
     {
       "id": "openai/o3-pro",
@@ -4371,21 +3470,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/o3-fast",
-      "displayName": "o3 (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 3.5,
-      "outputCost": 14,
-      "contextWindow": 200000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1187,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/o3",
@@ -4399,7 +3486,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1085,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/o3-mini-high",
@@ -4413,7 +3502,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1078,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/o3-mini",
@@ -4427,7 +3518,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1532,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "google/gemini-2.5-pro-preview",
@@ -4441,7 +3534,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1766,
+      "verifiedReply": "**Refining Core Logic**\n\nI'm currently focused on refining the core logic that underpins our current thought process. My recent efforts have"
     },
     {
       "id": "google/gemini-2.5-pro",
@@ -4455,7 +3550,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2027,
+      "verifiedReply": "**Refining Core Logic**\n\nI'm currently focused on refining the core logic that underpins our current thought process. My recent efforts have"
     },
     {
       "id": "google/gemini-2.5-flash",
@@ -4469,7 +3566,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1047,
+      "verifiedReply": "Hallo! Waarmeee kan ik je helpen?"
     },
     {
       "id": "google/gemini-2.5-flash-lite",
@@ -4483,7 +3582,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1060,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen heute behilflich sein?"
     },
     {
       "id": "deepseek/deepseek-r1-0528",
@@ -4497,7 +3598,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 755,
+      "verifiedReply": "Hallo! Der Nutzer hat \"hallo\" auf Deutsch geschrieben."
     },
     {
       "id": "mistralai/mistral-medium-3",
@@ -4511,35 +3614,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen-3-235b",
-      "displayName": "Qwen3 235B A22B",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.22,
-      "outputCost": 0.88,
-      "contextWindow": 262144,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen-3-32b",
-      "displayName": "Qwen 3 32B",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
-      "contextWindow": 128000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 951,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?\n\n(Hello!"
     },
     {
       "id": "qwen/qwen3-14b",
@@ -4553,7 +3630,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 737,
+      "verifiedReply": "Okay, the user said \"hallo\". That's Dutch for \"hello"
     },
     {
       "id": "qwen/qwen3-30b-a3b",
@@ -4567,35 +3646,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen-3-14b",
-      "displayName": "Qwen3-14B",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.12,
-      "outputCost": 0.24,
-      "contextWindow": 40960,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "qwen/qwen-3-30b",
-      "displayName": "Qwen3-30B-A3B",
-      "providerDisplay": "Qwen",
-      "inputCost": 0.12,
-      "outputCost": 0.5,
-      "contextWindow": 40960,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 759,
+      "verifiedReply": "Okay, the user just said \"hallo\". That's the German word"
     },
     {
       "id": "qwen/qwen3-32b",
@@ -4609,49 +3662,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-image-1",
-      "displayName": "GPT Image 1",
-      "providerDisplay": "OpenAI",
-      "inputCost": 5,
-      "outputCost": 40,
-      "contextWindow": 0,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "image"
-      ]
-    },
-    {
-      "id": "openai/gpt-image-1-mini",
-      "displayName": "GPT Image 1 Mini",
-      "providerDisplay": "OpenAI",
-      "inputCost": 2.5,
-      "outputCost": 32,
-      "contextWindow": 0,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "image"
-      ]
-    },
-    {
-      "id": "openai/o4-mini-fast",
-      "displayName": "o4-mini (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 2,
-      "outputCost": 8,
-      "contextWindow": 200000,
-      "reasoning": true,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1653,
+      "verifiedReply": "Okay, the user said \"hallo\". That's a greeting in Dutch"
     },
     {
       "id": "openai/o4-mini-high",
@@ -4665,7 +3678,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1302,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/o4-mini",
@@ -4679,21 +3694,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-4.1-fast",
-      "displayName": "GPT-4.1 (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 3.5,
-      "outputCost": 14,
-      "contextWindow": 1047576,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2550,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "openai/gpt-4.1",
@@ -4707,21 +3710,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-4.1-mini-fast",
-      "displayName": "GPT-4.1 mini (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.7,
-      "outputCost": 2.8,
-      "contextWindow": 1047576,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1001,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen? 😊"
     },
     {
       "id": "openai/gpt-4.1-mini",
@@ -4735,21 +3726,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-4.1-nano-fast",
-      "displayName": "GPT-4.1 nano (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 0.7999999999999999,
-      "contextWindow": 1047576,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1238,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "openai/gpt-4.1-nano",
@@ -4763,7 +3742,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1044,
+      "verifiedReply": "Hallo! Wie kann ich dir heute helfen?"
     },
     {
       "id": "meta-llama/llama-4-maverick",
@@ -4777,7 +3758,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1041,
+      "verifiedReply": "Hallo! Hoe gaat het met je vandaag?"
     },
     {
       "id": "meta-llama/llama-4-scout",
@@ -4791,7 +3774,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 997,
+      "verifiedReply": "Hallo! How can I assist you today? Do you have a question, need"
     },
     {
       "id": "deepseek/deepseek-chat-v3-0324",
@@ -4805,7 +3790,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 3089,
+      "verifiedReply": "Hallo! 😊 Wie kann ich Ihnen heute helfen?  \n\n(Hello!"
     },
     {
       "id": "mistralai/mistral-small-3.1-24b-instruct",
@@ -4819,7 +3806,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1017,
+      "verifiedReply": "Hello! How can I assist you today? Let's have a friendly chat if"
     },
     {
       "id": "cohere/command-a",
@@ -4833,63 +3822,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "google/gemma-3-12b-it",
-      "displayName": "Gemma 3 12B",
-      "providerDisplay": "Google",
-      "inputCost": 0.049999999999999996,
-      "outputCost": 0.15,
-      "contextWindow": 131072,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "google/gemma-3-27b-it",
-      "displayName": "Gemma 3 27B",
-      "providerDisplay": "Google",
-      "inputCost": 0.08,
-      "outputCost": 0.35,
-      "contextWindow": 131072,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "inception/mercury-coder-small",
-      "displayName": "Mercury Coder Small Beta",
-      "providerDisplay": "Inception",
-      "inputCost": 0.25,
-      "outputCost": 1,
-      "contextWindow": 32000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "mistralai/mistral-saba",
-      "displayName": "Saba",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.19999999999999998,
-      "outputCost": 0.6,
-      "contextWindow": 32768,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 955,
+      "verifiedReply": "Hallo! How can I assist you today? I'm here to help"
     },
     {
       "id": "qwen/qwen-plus",
@@ -4903,7 +3838,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1026,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?"
     },
     {
       "id": "deepseek/deepseek-r1",
@@ -4917,7 +3854,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2397,
+      "verifiedReply": "Hallo! Der Nutzer hat \"hallo\" auf Deutsch gesch"
     },
     {
       "id": "deepseek/deepseek-chat",
@@ -4931,21 +3870,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "meta-llama/llama-3.3-70b",
-      "displayName": "Llama 3.3 70B Instruct",
-      "providerDisplay": "Meta",
-      "inputCost": 0.72,
-      "outputCost": 0.72,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1879,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen? 😊"
     },
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
@@ -4959,7 +3886,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1032,
+      "verifiedReply": "Hallo! How can I help you today?"
     },
     {
       "id": "openai/o1",
@@ -4973,7 +3902,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1103,
+      "verifiedReply": "OK (empty text)"
     },
     {
       "id": "amazon/nova-pro-v1",
@@ -4987,7 +3918,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1284,
+      "verifiedReply": "Hello! It's nice to have you here. How can I assist you"
     },
     {
       "id": "amazon/nova-lite-v1",
@@ -5001,7 +3934,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1141,
+      "verifiedReply": "Hallo! Wie kann ich dir heute helfen? Hast du Fragen oder möchtest du"
     },
     {
       "id": "amazon/nova-micro-v1",
@@ -5015,49 +3950,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "amazon/nova-pro",
-      "displayName": "Nova Pro",
-      "providerDisplay": "Amazon",
-      "inputCost": 0.7999999999999999,
-      "outputCost": 3.1999999999999997,
-      "contextWindow": 300000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "amazon/nova-lite",
-      "displayName": "Nova Lite",
-      "providerDisplay": "Amazon",
-      "inputCost": 0.06,
-      "outputCost": 0.24,
-      "contextWindow": 300000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "amazon/nova-micro",
-      "displayName": "Nova Micro",
-      "providerDisplay": "Amazon",
-      "inputCost": 0.035,
-      "outputCost": 0.14,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 899,
+      "verifiedReply": "Hallo! Wie kann ich dir heute helfen? Ob du Fragen hast, Informationen"
     },
     {
       "id": "openai/gpt-4o-2024-11-20",
@@ -5071,7 +3966,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1162,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen? :)"
     },
     {
       "id": "mistralai/mistral-large-2407",
@@ -5085,35 +3982,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mistralai/ministral-8b",
-      "displayName": "Ministral 8B",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.15,
-      "outputCost": 0.15,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "mistralai/ministral-3b",
-      "displayName": "Ministral 3B",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.09999999999999999,
-      "outputCost": 0.09999999999999999,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2525,
+      "verifiedReply": "Hallo! 😊 Wie kann ich dir heute helfen?\n\n(Hello!"
     },
     {
       "id": "qwen/qwen-2.5-7b-instruct",
@@ -5127,7 +3998,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1017,
+      "verifiedReply": "Hallo! 如何帮助您？如果您需要德语方面的交流，也可以切换"
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
@@ -5141,21 +4014,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mistralai/mistral-small",
-      "displayName": "Mistral Small",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.15,
-      "outputCost": 0.6,
-      "contextWindow": 32000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1037,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen heute helfen?"
     },
     {
       "id": "cohere/command-r-plus-08-2024",
@@ -5169,7 +4030,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1007,
+      "verifiedReply": "Hallo! Hoe kan ik u helpen?"
     },
     {
       "id": "cohere/command-r-08-2024",
@@ -5183,7 +4046,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1006,
+      "verifiedReply": "Hello! How can I assist you today?"
     },
     {
       "id": "openai/gpt-4o-2024-08-06",
@@ -5197,21 +4062,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "meta-llama/llama-3.1-70b",
-      "displayName": "Llama 3.1 70B Instruct",
-      "providerDisplay": "Meta",
-      "inputCost": 0.72,
-      "outputCost": 0.72,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1100,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
@@ -5225,21 +4078,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "meta-llama/llama-3.1-8b",
-      "displayName": "Llama 3.1 8B Instruct",
-      "providerDisplay": "Meta",
-      "inputCost": 0.22,
-      "outputCost": 0.22,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1273,
+      "verifiedReply": "Hallo! Hoe gaat het met je?"
     },
     {
       "id": "meta-llama/llama-3.1-8b-instruct",
@@ -5253,7 +4094,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1169,
+      "verifiedReply": "Hallo! Is there something I can help you with or would you like to chat"
     },
     {
       "id": "openai/gpt-4o-mini-2024-07-18",
@@ -5267,7 +4110,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1193,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "mistralai/mistral-nemo",
@@ -5281,21 +4126,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mistralai/codestral",
-      "displayName": "Mistral Codestral",
-      "providerDisplay": "Mistral",
-      "inputCost": 0.3,
-      "outputCost": 0.8999999999999999,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1024,
+      "verifiedReply": "Hello! How can I assist you today? Let me know if you have any"
     },
     {
       "id": "openai/gpt-4o-2024-05-13",
@@ -5309,21 +4142,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-4o-fast",
-      "displayName": "GPT-4o (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 4.25,
-      "outputCost": 17,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 4652,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-4o",
@@ -5337,21 +4158,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-4o-mini-fast",
-      "displayName": "GPT-4o mini (Fast)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 0.25,
-      "outputCost": 1,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": false,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1064,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "openai/gpt-4o-mini",
@@ -5365,49 +4174,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
-    },
-    {
-      "id": "mistralai/mixtral-8x22b-instruct",
-      "displayName": "Mixtral 8x22B Instruct",
-      "providerDisplay": "Mistral",
-      "inputCost": 2,
-      "outputCost": 6,
-      "contextWindow": 65536,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "mistralai/mistral-large",
-      "displayName": "Mistral Large",
-      "providerDisplay": "Mistral",
-      "inputCost": 2,
-      "outputCost": 6,
-      "contextWindow": 128000,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
-    },
-    {
-      "id": "openai/gpt-3.5-turbo-0613",
-      "displayName": "GPT-3.5 Turbo (older v0613)",
-      "providerDisplay": "OpenAI",
-      "inputCost": 1,
-      "outputCost": 2,
-      "contextWindow": 4095,
-      "reasoning": false,
-      "compliant": true,
-      "featured": false,
-      "outputTypes": [
-        "text"
-      ]
+      ],
+      "verifiedLatencyMs": 1033,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "openrouter/auto",
@@ -5422,7 +4191,9 @@
       "outputTypes": [
         "text",
         "image"
-      ]
+      ],
+      "verifiedLatencyMs": 2324,
+      "verifiedReply": "Hallo! Wie kann ich dir helfen?"
     },
     {
       "id": "openai/gpt-3.5-turbo-16k",
@@ -5436,7 +4207,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2285,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "openai/gpt-4",
@@ -5450,7 +4223,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 4299,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen helfen?"
     },
     {
       "id": "openai/gpt-4-turbo",
@@ -5464,7 +4239,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 2430,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen heute helfen?"
     },
     {
       "id": "openai/gpt-3.5-turbo",
@@ -5478,7 +4255,9 @@
       "featured": false,
       "outputTypes": [
         "text"
-      ]
+      ],
+      "verifiedLatencyMs": 6085,
+      "verifiedReply": "Hallo! Wie kann ich Ihnen behilflich sein?"
     }
   ],
   "inheritedModelId": "google/gemini-4-argon",
