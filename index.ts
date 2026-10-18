@@ -504,483 +504,335 @@ function renderDashboardHtml(): string {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Twix AI Router — Unlimited Workspaces &amp; ${catalogModels.length} Verified Models</title>
+  <title>Twix AI Router</title>
   <style>
     :root {
-      --bg: #060913;
-      --bg-glow: radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.14), transparent 35%),
-                 radial-gradient(circle at 85% 15%, rgba(168, 85, 247, 0.14), transparent 35%),
-                 radial-gradient(circle at 50% 90%, rgba(16, 185, 129, 0.10), transparent 40%);
-      --card: rgba(15, 23, 42, 0.82);
-      --card-solid: #0f172a;
-      --border: rgba(51, 65, 85, 0.75);
-      --border-glow: rgba(56, 189, 248, 0.45);
-      --text: #f8fafc;
-      --muted: #94a3b8;
-      --cyan: #38bdf8;
-      --indigo: #818cf8;
-      --purple: #c084fc;
-      --green: #10b981;
-      --yellow: #f59e0b;
-      --orange: #f97316;
-      --red: #ef4444;
+      --bg: #f7f6f3;
+      --card: #ffffff;
+      --border: #e8e6e1;
+      --border-strong: #d8d5cf;
+      --text: #201f1c;
+      --muted: #716d64;
+      --accent: #2b56c6;
+      --accent-hover: #2148ad;
+      --accent-soft: rgba(43, 86, 198, 0.08);
+      --green: #177a45;
+      --green-soft: rgba(23, 122, 69, 0.1);
+      --amber: #a05c08;
+      --amber-soft: rgba(160, 92, 8, 0.1);
+      --red: #bf3b30;
+      --red-soft: rgba(191, 59, 48, 0.08);
+      --purple: #6a4fbf;
+      --purple-soft: rgba(106, 79, 194, 0.09);
     }
     * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
       margin: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: var(--bg);
-      background-image: var(--bg-glow);
-      background-attachment: fixed;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
       color: var(--text);
-      line-height: 1.5;
-      padding: 20px 16px 70px;
+      font-size: 14px;
+      line-height: 1.55;
     }
-    .container { max-width: 1240px; margin: 0 auto; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px 88px; }
 
-    /* HERO HEADER */
-    .hero {
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 27, 75, 0.75));
-      border: 1px solid var(--border-glow);
-      border-radius: 18px;
-      padding: 22px 24px;
-      margin-bottom: 20px;
-      box-shadow: 0 12px 40px -10px rgba(56, 189, 248, 0.18);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-    }
-    .hero-title {
-      font-size: 1.65rem;
-      font-weight: 800;
-      margin: 0;
-      background: linear-gradient(90deg, #fff, #38bdf8, #c084fc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 12px;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.2px;
-      -webkit-text-fill-color: initial;
-    }
-    .pill-green { background: rgba(16, 185, 129, 0.18); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.45); }
-    .pill-cyan { background: rgba(56, 189, 248, 0.18); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.45); }
-    .pill-purple { background: rgba(192, 132, 252, 0.18); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.45); }
-
-    /* WORKSPACE TABS BAR */
-    .ws-bar {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      overflow-x: auto;
-      padding-bottom: 6px;
-      margin-bottom: 18px;
-    }
-    .ws-tab {
-      background: rgba(15, 23, 42, 0.85);
-      border: 1px solid var(--border);
-      color: var(--muted);
-      padding: 10px 16px;
-      border-radius: 12px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.86rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      white-space: nowrap;
-      transition: all 0.2s ease;
-    }
-    .ws-tab:hover { border-color: var(--cyan); color: var(--text); }
-    .ws-tab.active {
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.22), rgba(129, 140, 248, 0.22));
-      border-color: var(--cyan);
-      color: #fff;
-      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.22);
-    }
-    .ws-slot-badge {
-      font-size: 0.72rem;
-      padding: 2px 7px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.08);
-      color: #cbd5e1;
-    }
-    .ws-add-btn {
-      background: linear-gradient(135deg, var(--cyan), var(--indigo));
-      color: #060913;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 12px;
-      font-weight: 800;
-      font-size: 0.84rem;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-
-    /* CARDS & LAYOUT */
-    .card {
-      background: var(--card);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    .card-title {
-      margin: 0;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    /* SMART RECOMMENDATION BANNER */
-    .rec-banner {
-      background: linear-gradient(90deg, rgba(16, 185, 129, 0.14), rgba(56, 189, 248, 0.12));
-      border: 1px solid rgba(16, 185, 129, 0.4);
-      border-radius: 12px;
-      padding: 14px 16px;
-      margin-bottom: 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .rec-banner.warn {
-      background: linear-gradient(90deg, rgba(245, 158, 11, 0.16), rgba(239, 68, 68, 0.14));
-      border-color: rgba(245, 158, 11, 0.5);
-    }
-
-    /* KEY SLOTS VISUAL GRID (MAX 10 SLOTS PER WORKSPACE) */
-    .slots-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-    .key-card {
-      background: #090e1c;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 15px;
-      position: relative;
-      transition: all 0.2s ease;
-    }
-    .key-card.active-turn {
-      border-color: var(--green);
-      box-shadow: 0 0 22px rgba(16, 185, 129, 0.2);
-    }
-    .key-card.warning-turn {
-      border-color: var(--yellow);
-    }
-    .key-card.exhausted-turn {
-      border-color: rgba(239, 68, 68, 0.5);
-      opacity: 0.88;
-    }
-    .key-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 8px;
-      margin-bottom: 8px;
-    }
-    .slot-num {
-      font-size: 0.72rem;
-      font-weight: 800;
-      padding: 2px 8px;
-      border-radius: 6px;
-      background: rgba(56, 189, 248, 0.15);
-      color: var(--cyan);
-    }
-    .usage-wrap {
-      margin: 10px 0;
-    }
-    .usage-labels {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.78rem;
-      margin-bottom: 5px;
-      font-weight: 600;
-    }
-    .usage-bar-bg {
-      width: 100%;
-      height: 10px;
-      background: #1e293b;
-      border-radius: 999px;
-      overflow: hidden;
-    }
-    .usage-bar-fill {
-      height: 100%;
-      border-radius: 999px;
-      transition: width 0.3s ease;
-    }
-
-    /* BUTTONS & INPUTS */
-    .btn-sm {
-      background: #1e293b;
-      color: var(--text);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 6px 11px;
-      font-size: 0.75rem;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background 0.15s;
-    }
-    .btn-sm:hover { background: #334155; }
-    .btn-green { background: rgba(16, 185, 129, 0.18); color: #34d399; border-color: rgba(16, 185, 129, 0.4); }
-    .btn-danger { background: rgba(239, 68, 68, 0.14); color: #f87171; border-color: rgba(239, 68, 68, 0.35); }
-    .btn-cyan { background: rgba(56, 189, 248, 0.18); color: #38bdf8; border-color: rgba(56, 189, 248, 0.4); }
-
-    input, select, textarea, button.primary {
-      width: 100%;
-      padding: 9px 12px;
-      border-radius: 9px;
-      border: 1px solid var(--border);
-      background: #060a14;
-      color: var(--text);
-      font-size: 0.86rem;
-    }
-    button.primary {
-      background: linear-gradient(135deg, var(--cyan), var(--indigo));
-      color: #060913;
-      font-weight: 800;
-      border: none;
-      cursor: pointer;
-    }
-    button.primary:disabled { opacity: 0.45; cursor: not-allowed; }
-
-    pre {
-      background: #050811;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px;
-      overflow-x: auto;
-      font-size: 0.79rem;
-      color: #cbd5e1;
-      margin: 8px 0 0;
-    }
-
-    .table-wrap {
-      overflow-x: auto;
-      max-height: 500px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-    }
-    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-    th, td {
-      text-align: left;
-      padding: 10px 12px;
+    /* Top bar + workspace tabs */
+    .topbar {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
-      vertical-align: middle;
     }
-    th { background: #0b1325; position: sticky; top: 0; z-index: 1; color: var(--muted); font-weight: 600; }
-    tr:hover { background: rgba(255,255,255,0.025); }
-    code.id {
-      color: var(--cyan);
-      background: rgba(56, 189, 248, 0.12);
-      padding: 3px 7px;
-      border-radius: 6px;
-      font-weight: 600;
+    .topbar-inner {
+      max-width: 1120px; margin: 0 auto; padding: 0 24px; height: 58px;
+      display: flex; align-items: center; gap: 28px;
     }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 16px;
+    .brand { font-weight: 650; font-size: 15px; letter-spacing: -0.01em; white-space: nowrap; }
+    .brand-meta { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+    .topbar .ws-bar { flex: 1; min-width: 0; }
+
+    .ws-bar { display: flex; align-items: center; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+    .ws-bar::-webkit-scrollbar { display: none; }
+    .ws-tab {
+      background: transparent; border: none; color: var(--muted);
+      padding: 8px 12px; cursor: pointer; font-weight: 550; font-size: 13.5px;
+      display: flex; align-items: center; gap: 8px; white-space: nowrap;
+      border-radius: 8px; transition: color .15s, background .15s;
+      font-family: inherit;
+    }
+    .ws-tab:hover { color: var(--text); background: var(--accent-soft); }
+    .ws-tab.active { color: var(--text); background: #efede8; }
+    .ws-slot-badge { font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+    .ws-add-btn {
+      margin-left: 8px; background: var(--card); border: 1px solid var(--border-strong);
+      color: var(--text); padding: 7px 13px; border-radius: 8px; font-weight: 550;
+      font-size: 13px; cursor: pointer; white-space: nowrap; transition: border-color .15s, color .15s;
+    }
+    .ws-add-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Page head */
+    .page-head { padding: 34px 0 2px; }
+    .page-head-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+    .page-head h1 {
+      margin: 0; font-size: 21px; font-weight: 650; letter-spacing: -0.015em;
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    }
+    .lede { color: var(--muted); margin: 10px 0 0; max-width: 620px; font-size: 13.5px; }
+    .endpoint-line { margin: 12px 0 0; font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .endpoint-line code { background: var(--card); border: 1px solid var(--border); padding: 3px 8px; border-radius: 6px; font-size: 12px; color: var(--text); }
+    .endpoint-line .tok { color: var(--purple); }
+    .head-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+    /* Pills */
+    .pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 2px 9px; border-radius: 999px;
+      font-size: 11.5px; font-weight: 600; letter-spacing: 0.01em;
+      background: #f1efe9; color: var(--muted);
+    }
+    .pill-green { background: var(--green-soft); color: var(--green); }
+    .pill-purple { background: var(--purple-soft); color: var(--purple); }
+
+    /* Buttons & inputs */
+    .btn-sm {
+      background: var(--card); color: var(--text);
+      border: 1px solid var(--border-strong); border-radius: 8px;
+      padding: 5px 11px; font-size: 12.5px; cursor: pointer; font-weight: 550;
+      transition: border-color .15s, color .15s; font-family: inherit;
+    }
+    .btn-sm:hover { border-color: var(--text); }
+    .btn-cyan { color: var(--accent); border-color: rgba(43,86,198,.35); background: var(--accent-soft); }
+    .btn-cyan:hover { border-color: var(--accent); }
+    .btn-green { color: var(--green); border-color: rgba(23,122,69,.35); background: var(--green-soft); }
+    .btn-green:hover { border-color: var(--green); }
+    .btn-danger { color: var(--red); border-color: rgba(191,59,48,.35); background: var(--red-soft); }
+    .btn-danger:hover { border-color: var(--red); }
+
+    input, select {
+      width: 100%; padding: 8px 11px; border-radius: 8px;
+      border: 1px solid var(--border-strong); background: var(--card); color: var(--text);
+      font-size: 13.5px; font-family: inherit;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    input:focus, select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+    label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 5px; font-weight: 550; }
+    button.primary {
+      background: var(--accent); color: #fff; border: none;
+      padding: 9px 14px; border-radius: 8px; font-weight: 600; font-size: 13.5px;
+      cursor: pointer; font-family: inherit; transition: background .15s;
+    }
+    button.primary:hover { background: var(--accent-hover); }
+    button.primary:disabled { opacity: .45; cursor: not-allowed; }
+
+    /* Recommendation banner */
+    .rec-banner {
+      background: var(--accent-soft); border: 1px solid rgba(43,86,198,.18);
+      border-radius: 10px; padding: 13px 16px; margin: 24px 0 14px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+    }
+    .rec-banner.warn { background: var(--amber-soft); border-color: rgba(160,92,8,.25); }
+    .rec-title { font-weight: 600; font-size: 13.5px; }
+    .rec-desc { font-size: 12.5px; color: var(--muted); margin-top: 2px; max-width: 720px; }
+
+    /* Cards */
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 18px; }
+    .card-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+    .card-title { margin: 0; font-size: 15px; font-weight: 650; letter-spacing: -0.01em; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .card-sub { color: var(--muted); font-size: 12.5px; margin: 3px 0 0; }
+
+    /* Key slots */
+    .slots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 12px; margin-bottom: 18px; }
+    .key-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; transition: border-color .2s, box-shadow .2s; }
+    .key-card.active-turn { border-color: var(--green); box-shadow: inset 3px 0 0 var(--green); }
+    .key-card.warning-turn { border-color: var(--amber); box-shadow: inset 3px 0 0 var(--amber); }
+    .key-card.exhausted-turn { border-color: var(--red); box-shadow: inset 3px 0 0 var(--red); }
+    .key-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 10px; }
+    .slot-num { font-size: 10.5px; font-weight: 700; letter-spacing: .06em; color: var(--muted); text-transform: uppercase; }
+    .usage-wrap { margin: 10px 0; }
+    .usage-labels { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 5px; color: var(--muted); }
+    .usage-bar-bg { width: 100%; height: 6px; background: #eceae5; border-radius: 999px; overflow: hidden; }
+    .usage-bar-fill { height: 100%; border-radius: 999px; transition: width .3s ease; }
+
+    /* Add-key form */
+    .add-key-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 6px; }
+    .add-key-title { font-weight: 600; font-size: 13.5px; }
+    .add-key-note { font-size: 12px; color: var(--muted); }
+    .form-grid { display: grid; grid-template-columns: 1.1fr 1fr 1.3fr 1.3fr .9fr .9fr; gap: 10px; align-items: end; }
+
+    /* Bulk test */
+    .bt-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr .7fr; gap: 10px; align-items: end; }
+    .bt-stats { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .progress { margin: 14px 0 0; }
+
+    /* Table & code */
+    pre { background: #f4f2ee; border: 1px solid var(--border); border-radius: 8px; padding: 12px; overflow-x: auto; font-size: 12.5px; color: #3f3d38; margin: 8px 0 0; }
+    .table-wrap { overflow-x: auto; max-height: 520px; border: 1px solid var(--border); border-radius: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    th { background: var(--card); position: sticky; top: 0; z-index: 1; color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: #fafaf8; }
+    code.id { color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 5px; font-weight: 550; font-size: 12px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
+
+    @media (max-width: 900px) {
+      .form-grid, .bt-grid { grid-template-columns: 1fr 1fr; }
+      .page-head { padding-top: 24px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- HERO -->
-    <div class="hero">
+    <header class="topbar" style="margin: 0 -24px; padding: 0 24px;">
+      <div class="topbar-inner" style="padding: 0;">
+        <div class="brand">Twix AI Router</div>
+        <div class="brand-meta">${catalogModels.length} model terverifikasi · failover otomatis</div>
+        <nav class="ws-bar" id="ws-bar"></nav>
+      </div>
+    </header>
+
+    <section class="page-head">
+      <div class="page-head-row">
+        <div>
+          <h1>
+            <span id="ws-title">Workspace</span>
+            <span class="pill" id="ws-slot-counter">1 / 10 slot</span>
+            <span class="pill pill-green" id="ws-default-badge" style="display:none">Default global</span>
+          </h1>
+          <p class="endpoint-line">
+            <span>Endpoint</span>
+            <code id="ws-endpoint">${PUBLIC_URL}/w/workspace-1/v1/chat/completions</code>
+            <span>Workspace key</span>
+            <code class="tok" id="ws-token">twix-ws-1</code>
+          </p>
+        </div>
+        <div class="head-actions">
+          <button class="btn-sm" onclick="setAsDefaultWorkspace()">Jadikan default</button>
+          <button class="btn-sm" onclick="renameCurrentWorkspace()">Ubah nama</button>
+          <button class="btn-sm" onclick="resetWorkspaceUsage()">Reset usage</button>
+          <button class="btn-sm btn-danger" onclick="deleteCurrentWorkspace()">Hapus</button>
+        </div>
+      </div>
+      <p class="lede">Key #1 dipakai sampai habis, lalu trafik otomatis lanjut ke key berikutnya. Maksimal 10 key per workspace.</p>
+    </section>
+
+    <div class="rec-banner" id="rec-banner">
       <div>
-        <h1 class="hero-title">
-          ⚡ Twix AI Router
-          <span class="pill pill-green">✅ ${catalogModels.length} Verified Working Models</span>
-          <span class="pill pill-cyan">🏢 Unlimited Workspaces (Max 10 Keys/Room)</span>
-          <span class="pill pill-purple">📊 Sequential Spillover + Live Usage %</span>
-        </h1>
-        <div style="color: var(--muted); font-size: 0.86rem; margin-top: 6px;">
-          Hanya menampilkan <strong>${catalogModels.length} model yang terbukti sukses (OK)</strong>. Setiap Workspace menampung maks 10 API Key terbatas: pakai Slot #1 sampai 100%, otomatis pindah ke Slot #2, dst. Jika habis tinggal ganti key di slot tersebut!
+        <div class="rec-title" id="rec-headline">Memuat analisis workspace…</div>
+        <div class="rec-desc" id="rec-desc"></div>
+      </div>
+      <div id="rec-badge"></div>
+    </div>
+
+    <div class="slots-grid" id="keys-grid"></div>
+
+    <section class="card">
+      <div class="add-key-head">
+        <div class="add-key-title">Tambah key ke <span id="add-ws-name">Workspace 1</span></div>
+        <div class="add-key-note">Slot #1 penuh dulu, lalu otomatis lanjut ke slot #2 dan seterusnya</div>
+      </div>
+      <div class="form-grid">
+        <div>
+          <label>Label</label>
+          <input id="k-name" placeholder="Key utama #1" />
+        </div>
+        <div>
+          <label>Provider</label>
+          <select id="k-provider" onchange="onProviderChange()">
+            <option value="openrouter">OpenRouter</option>
+            <option value="openai">OpenAI Direct</option>
+            <option value="anthropic">Anthropic Direct</option>
+            <option value="gemini">Google Gemini</option>
+            <option value="groq">Groq</option>
+            <option value="deepseek">DeepSeek</option>
+            <option value="9router">9Router</option>
+            <option value="custom">Custom URL</option>
+          </select>
+        </div>
+        <div>
+          <label>Base URL</label>
+          <input id="k-baseurl" value="https://openrouter.ai/api/v1" />
+        </div>
+        <div>
+          <label>API Key</label>
+          <input id="k-secret" placeholder="sk-..." />
+        </div>
+        <div>
+          <label>Kuota (req = 100%)</label>
+          <input id="k-quota" type="number" value="100" min="1" title="Jumlah request maksimal sebelum key ini dianggap 100% habis dan pindah ke key berikutnya" />
+        </div>
+        <div>
+          <button class="primary" id="btn-add-key" onclick="addKeyToWorkspace()" style="width:100%">Tambah slot</button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- WORKSPACE SWITCHER BAR -->
-    <div class="ws-bar" id="ws-bar">
-      <!-- Dynamically rendered workspace tabs -->
-    </div>
-
-    <!-- ACTIVE WORKSPACE ROOM MANAGER -->
-    <div class="card">
+    <section class="card">
       <div class="card-header">
         <div>
-          <h2 class="card-title">
-            <span id="ws-title">🏢 Workspace 1</span>
-            <span class="pill pill-cyan" id="ws-slot-counter">1 / 10 Slot Terisi</span>
-            <span class="pill pill-green" id="ws-default-badge" style="display:none">⭐ Default Global</span>
-          </h2>
-          <div style="font-size:0.8rem; color:var(--muted); margin-top:3px;">
-            Endpoint Khusus Room Ini: <code id="ws-endpoint" style="color:var(--cyan)">${PUBLIC_URL}/w/workspace-1/v1/chat/completions</code>
-            &nbsp;|&nbsp; Workspace Key: <code id="ws-token" style="color:var(--purple)">twix-ws-1</code>
-          </div>
+          <h2 class="card-title">Bulk test model</h2>
+          <p class="card-sub">Uji ${catalogModels.length} model terverifikasi dari workspace ini</p>
         </div>
-        <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <button class="btn-sm btn-cyan" onclick="setAsDefaultWorkspace()">⭐ Jadikan Default</button>
-          <button class="btn-sm" onclick="renameCurrentWorkspace()">✏️ Ubah Nama Room</button>
-          <button class="btn-sm" onclick="resetWorkspaceUsage()">🔄 Reset Semua Usage (0%)</button>
-          <button class="btn-sm btn-danger" onclick="deleteCurrentWorkspace()">🗑️ Hapus Room</button>
+        <div class="head-actions">
+          <button class="btn-sm" onclick="copyWorkingModels()">Copy semua model ID</button>
+          <button class="btn-sm" onclick="exportBulkResults()">Download JSON</button>
         </div>
       </div>
 
-      <!-- SMART AI RECOMMENDATION BANNER -->
-      <div class="rec-banner" id="rec-banner">
+      <div class="bt-grid">
         <div>
-          <div style="font-weight:700; font-size:0.9rem; color:#fff;" id="rec-headline">💡 Rekomendasi Terbaik Workspace</div>
-          <div style="font-size:0.82rem; color:#cbd5e1; margin-top:2px;" id="rec-desc">Memuat analisis pemakaian API Key di room ini...</div>
-        </div>
-        <div id="rec-badge"></div>
-      </div>
-
-      <!-- VISUAL KEY SLOTS (UP TO 10 CARDS) -->
-      <div class="slots-grid" id="keys-grid"></div>
-
-      <!-- ADD KEY TO THIS WORKSPACE (MAX 10) -->
-      <div style="background:#080d1a; border:1px dashed var(--border-glow); border-radius:14px; padding:16px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap;">
-          <div style="font-weight:700; font-size:0.9rem; color:var(--cyan);">
-            ➕ Tambah API Key ke <span id="add-ws-name">Workspace 1</span> (Maksimal 10 Key per Room)
-          </div>
-          <div style="font-size:0.76rem; color:var(--muted);">
-            Urutan eksekusi: Slot #1 dipakai penuh (0% → 100%), lalu otomatis lanjut ke Slot #2, #3, s/d #10
-          </div>
-        </div>
-
-        <div style="display:grid; grid-template-columns: 1.1fr 1fr 1.3fr 1.3fr 0.9fr 0.9fr; gap:10px; align-items:end;">
-          <div>
-            <label style="font-size:0.73rem;color:var(--muted)">Label / Nama Key</label>
-            <input id="k-name" placeholder="Misal: Key Utama #1" />
-          </div>
-          <div>
-            <label style="font-size:0.73rem;color:var(--muted)">Provider</label>
-            <select id="k-provider" onchange="onProviderChange()">
-              <option value="openrouter">OpenRouter</option>
-              <option value="openai">OpenAI Direct</option>
-              <option value="anthropic">Anthropic Direct</option>
-              <option value="gemini">Google Gemini</option>
-              <option value="groq">Groq</option>
-              <option value="deepseek">DeepSeek</option>
-              <option value="9router">9Router</option>
-              <option value="custom">Custom URL</option>
-            </select>
-          </div>
-          <div>
-            <label style="font-size:0.73rem;color:var(--muted)">Base URL Upstream</label>
-            <input id="k-baseurl" value="https://openrouter.ai/api/v1" />
-          </div>
-          <div>
-            <label style="font-size:0.73rem;color:var(--muted)">API Key Secret</label>
-            <input id="k-secret" placeholder="sk-..." />
-          </div>
-          <div>
-            <label style="font-size:0.73rem;color:var(--muted)">Batas Kuota (Req = 100%)</label>
-            <input id="k-quota" type="number" value="100" min="1" title="Jumlah request maksimal sebelum key ini dianggap 100% habis dan pindah ke key berikutnya" />
-          </div>
-          <div>
-            <button class="primary" id="btn-add-key" onclick="addKeyToWorkspace()">+ Tambah Slot</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 1-CLICK BULK TESTER FOR THE 266 VERIFIED MODELS -->
-    <div class="card">
-      <div class="card-header">
-        <h2 class="card-title">
-          <span>🚀 1-Click Sequential Bulk Test (${catalogModels.length} Verified Models)</span>
-        </h2>
-        <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <button class="btn-sm btn-green" onclick="copyWorkingModels()">📋 Copy Semua ${catalogModels.length} Model ID</button>
-          <button class="btn-sm" onclick="exportBulkResults()">💾 Download JSON</button>
-        </div>
-      </div>
-
-      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr 0.7fr; gap: 10px; align-items: end;">
-        <div>
-          <label style="font-size:0.74rem;color:var(--muted)">Prompt Test</label>
+          <label>Prompt test</label>
           <input id="bt-prompt" value="hallo" />
         </div>
         <div>
-          <label style="font-size:0.74rem;color:var(--muted)">Target Model</label>
+          <label>Target</label>
           <select id="bt-scope">
-            <option value="all">Semua ${catalogModels.length} Verified Models</option>
-            <option value="filtered">Hanya yang Difilter di Tabel</option>
-            <option value="featured">Hanya Featured Models (${featured.length})</option>
+            <option value="all">Semua ${catalogModels.length} model</option>
+            <option value="filtered">Hanya yang difilter</option>
+            <option value="featured">Featured (${featured.length})</option>
           </select>
         </div>
         <div>
-          <label style="font-size:0.74rem;color:var(--muted)">Giliran</label>
+          <label>Bersamaan</label>
           <select id="bt-concurrency">
-            <option value="1" selected>1 per 1 Bergantian</option>
-            <option value="2">2 Model Bergantian</option>
-            <option value="3">3 Model Bergantian</option>
+            <option value="1" selected>1 per 1</option>
+            <option value="2">2 paralel</option>
+            <option value="3">3 paralel</option>
           </select>
         </div>
         <div>
-          <button class="primary" id="bt-start-btn" onclick="startBulkTest()">⚡ Tes Ulang di Workspace Ini</button>
+          <button class="primary" id="bt-start-btn" onclick="startBulkTest()" style="width:100%">Mulai tes</button>
         </div>
         <div>
-          <button class="btn-sm btn-danger" id="bt-stop-btn" onclick="stopBulkTest()" style="width:100%; padding:10px;" disabled>⏹ Stop</button>
+          <button class="btn-sm btn-danger" id="bt-stop-btn" onclick="stopBulkTest()" style="width:100%; padding:9px;" disabled>Stop</button>
         </div>
       </div>
 
-      <div class="usage-bar-bg" style="margin: 12px 0;">
-        <div class="usage-bar-fill" id="bt-progress" style="width:100%; background: linear-gradient(90deg, var(--cyan), var(--green));"></div>
+      <div class="progress">
+        <div class="usage-bar-bg">
+          <div class="usage-bar-fill" id="bt-progress" style="width:100%"></div>
+        </div>
       </div>
 
-      <div style="display:flex; gap:12px; flex-wrap:wrap; font-size:0.82rem;">
-        <span class="pill pill-cyan">Status: <strong id="bt-state">Verified 100% Ready</strong></span>
-        <span class="pill pill-green">✅ Sukses (OK): <strong id="bt-ok">${catalogModels.length}</strong></span>
-        <span class="pill pill-purple">Sedang Dites: <code id="bt-current">-</code></span>
+      <div class="bt-stats">
+        <span class="pill">Status: <strong id="bt-state">Siap</strong></span>
+        <span class="pill pill-green">OK: <strong id="bt-ok">${catalogModels.length}</strong></span>
+        <span class="pill">Sedang dites: <code id="bt-current">-</code></span>
       </div>
-    </div>
+    </section>
 
-    <!-- CURL EXAMPLES PER WORKSPACE -->
-    <div class="grid-2" style="margin-bottom:20px;">
-      <div class="card" style="margin-bottom:0;">
+    <div class="grid-2">
+      <section class="card" style="margin-top:0;">
         <div class="card-header" style="margin-bottom:6px;">
-          <h2 class="card-title" style="font-size:0.95rem;">1. cURL Chat Completions (Otomatis Pakai Slot Aktif di Room Ini)</h2>
+          <h2 class="card-title" style="font-size:13.5px;">Chat completions</h2>
           <button class="btn-sm" onclick="copyPre('curl-ws')">Copy</button>
         </div>
         <pre id="curl-ws"></pre>
-      </div>
-      <div class="card" style="margin-bottom:0;">
+      </section>
+      <section class="card" style="margin-top:0;">
         <div class="card-header" style="margin-bottom:6px;">
-          <h2 class="card-title" style="font-size:0.95rem;">2. cURL Ganti API Key yang Habis via API</h2>
+          <h2 class="card-title" style="font-size:13.5px;">Ganti key via API</h2>
           <button class="btn-sm" onclick="copyPre('curl-replace')">Copy</button>
         </div>
         <pre id="curl-replace">curl -X PATCH "${PUBLIC_URL}/api/keys" \\
@@ -991,17 +843,17 @@ function renderDashboardHtml(): string {
     "api_key": "sk-key-baru-anda",
     "quota_limit": 100
   }'</pre>
-      </div>
+      </section>
     </div>
 
-    <!-- VERIFIED MODELS CATALOG TABLE -->
-    <div class="card">
+    <section class="card">
       <div class="card-header">
-        <h2 class="card-title">
-          <span>📚 Daftar ${catalogModels.length} Model Sukses (125 Model Gagal Sudah Dihapus Permanen)</span>
-        </h2>
+        <div>
+          <h2 class="card-title">Katalog model</h2>
+          <p class="card-sub">${catalogModels.length} model terverifikasi siap dipakai</p>
+        </div>
       </div>
-      <input id="search" placeholder="Cari dari ${catalogModels.length} model sukses (contoh: gemini-4, claude, gpt-6, deepseek, qwen)..." oninput="filterModels()" style="margin-bottom:12px;" />
+      <input id="search" placeholder="Cari model (mis. gemini, claude, gpt, deepseek)…" oninput="filterModels()" style="margin-bottom:12px;" />
       <div class="table-wrap">
         <table>
           <thead>
@@ -1011,14 +863,14 @@ function renderDashboardHtml(): string {
               <th>Provider</th>
               <th>Status</th>
               <th>Latency</th>
-              <th>Respons Terverifikasi ("hallo")</th>
-              <th>Aksi</th>
+              <th>Respons</th>
+              <th></th>
             </tr>
           </thead>
           <tbody id="model-tbody"></tbody>
         </table>
       </div>
-    </div>
+    </section>
   </div>
 
   <script>
@@ -1080,7 +932,7 @@ function renderDashboardHtml(): string {
       const bar = document.getElementById('ws-bar');
       bar.innerHTML = WORKSPACES.map(w => \`
         <div class="ws-tab \${w.id === CURRENT_WS_ID ? 'active' : ''}" onclick="selectWorkspace(\${w.id})">
-          <span>🏢 \${escapeHtml(w.name)} \${w.is_default ? '⭐' : ''}</span>
+          <span>\${escapeHtml(w.name)}</span>
           <span class="ws-slot-badge">\${w.key_count || 0}/\${w.max_keys || 10} Key</span>
         </div>
       \`).join('') + \`
@@ -1145,7 +997,7 @@ function renderDashboardHtml(): string {
       const ws = WORKSPACES.find(w => w.id === CURRENT_WS_ID);
       if (!ws) return;
 
-      document.getElementById('ws-title').innerText = '🏢 ' + ws.name;
+      document.getElementById('ws-title').innerText = ws.name;
       document.getElementById('add-ws-name').innerText = ws.name;
       document.getElementById('ws-endpoint').innerText = '${PUBLIC_URL}/w/' + ws.slug + '/v1/chat/completions';
       document.getElementById('ws-token').innerText = ws.workspace_token;
@@ -1186,8 +1038,8 @@ function renderDashboardHtml(): string {
       if (keys.length === 0) {
         grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:28px; color:var(--muted); border:1px dashed var(--border); border-radius:12px;">Belum ada API Key di ' + escapeHtml(ws.name) + '. Tambahkan 1 s/d 10 API Key di form bawah.</div>';
         recBanner.className = 'rec-banner warn';
-        recHeadline.innerText = '⚠️ Workspace Ini Belum Memiliki API Key';
-        recDesc.innerText = 'Tambahkan minimal 2–5 API Key agar sistem Sequential Failover punya cadangan otomatis saat Key #1 mencapai 100%.';
+        recHeadline.innerText = 'Workspace ini belum punya API key';
+        recDesc.innerText = 'Tambah minimal 2-5 key agar failover punya cadangan saat key utama habis.';
         recBadge.innerHTML = '<span class="pill pill-purple">0 / 10 Slot</span>';
         return;
       }
@@ -1212,22 +1064,22 @@ function renderDashboardHtml(): string {
       // Smart Recommendation Banner
       if (!activeTurnId) {
         recBanner.className = 'rec-banner warn';
-        recHeadline.innerText = '🚨 Semua API Key di ' + ws.name + ' Sudah 100% Habis!';
-        recDesc.innerText = 'Rekomendasi: Klik tombol "🔑 Ganti Key" pada Slot #1 untuk memasukkan API Key baru, atau klik "🔄 Reset Semua Usage (0%)" jika kuota key lama sudah di-topup.';
-        recBadge.innerHTML = '<span class="pill" style="background:rgba(239,68,68,0.2);color:#f87171;">Perlu Ganti Key</span>';
+        recHeadline.innerText = 'Semua key di ' + ws.name + ' sudah habis (100%)';
+        recDesc.innerText = 'Ganti key pada slot yang habis, atau reset usage jika kuota sudah di-top-up.';
+        recBadge.innerHTML = '<span class="pill" style="background:var(--red-soft);color:var(--red);">Perlu ganti key</span>';
       } else {
         const activeKeyObj = keys.find(k => k.id === activeTurnId);
         const activePct = Math.min(100, Math.round(((activeKeyObj.used_requests || 0) / Math.max(1, activeKeyObj.quota_limit || 100)) * 100));
         recBanner.className = (exhaustedKeys.length > 0 || nearlyFullKeys.length > 0) ? 'rec-banner warn' : 'rec-banner';
-        recHeadline.innerText = '💡 Rekomendasi Terbaik — Giliran Aktif: ' + activeKeyObj.name + ' (' + activePct + '% Terpakai)';
+        recHeadline.innerText = 'Giliran aktif: ' + activeKeyObj.name + ' (' + activePct + '% terpakai)';
         const parts = [];
         if (exhaustedKeys.length > 0) {
-          parts.push('⚠️ ' + exhaustedKeys.length + ' Key sudah habis 100% (klik "🔑 Ganti Key" di slot merah tanpa mengganggu trafik).');
+          parts.push(exhaustedKeys.length + ' key habis 100%, ganti tanpa mengganggu trafik.');
         }
         if (nearlyFullKeys.length > 0) {
-          parts.push('⏳ ' + nearlyFullKeys.map(k => k.name).join(', ') + ' hampir habis (≥80%).');
+          parts.push(nearlyFullKeys.map(k => k.name).join(', ') + ' hampir habis (80%+).');
         }
-        parts.push('🟢 ' + standbyKeys.length + ' Key cadangan masih 0% (Belum Digunakan & siap menerima limpahan otomatis).');
+        parts.push(standbyKeys.length + ' key cadangan masih 0% dan siap menerima limpahan.');
         recDesc.innerText = parts.join(' ');
         recBadge.innerHTML = '<span class="pill pill-green">' + standbyKeys.length + ' Key Belum Digunakan (0%)</span>';
       }
@@ -1240,27 +1092,27 @@ function renderDashboardHtml(): string {
         const isExhausted = k.status === 'exhausted' || pct >= 100;
         const isUnused = used === 0 && !isExhausted;
 
-        let barColor = 'linear-gradient(90deg, #10b981, #38bdf8)';
-        let stateLabel = '🟢 BELUM DIGUNAKAN (0% STANDBY)';
+        let barColor = '#10b981';
+        let stateLabel = 'Standby · 0%';
         let cardClass = 'key-card';
 
         if (!k.enabled) {
-          barColor = '#475569';
-          stateLabel = '⏸️ DISABLED';
+          barColor = '#a8a29e';
+          stateLabel = 'Nonaktif';
         } else if (isExhausted) {
-          barColor = 'linear-gradient(90deg, #f97316, #ef4444)';
-          stateLabel = '🔴 HABIS (100%) — PERLU GANTI KEY';
+          barColor = '#bf3b30';
+          stateLabel = 'Habis 100% · ganti key';
           cardClass = 'key-card exhausted-turn';
         } else if (pct >= 80) {
-          barColor = 'linear-gradient(90deg, #f59e0b, #ef4444)';
-          stateLabel = (isTurn ? '⚡ SEDANG DIPAKAI — ' : '') + '⚠️ HAMPIR HABIS (' + pct + '%)';
+          barColor = '#a05c08';
+          stateLabel = (isTurn ? 'Aktif · ' : '') + 'Hampir habis (' + pct + '%)';
           cardClass = 'key-card warning-turn';
         } else if (isTurn) {
           barColor = 'linear-gradient(90deg, #10b981, #38bdf8)';
-          stateLabel = '⚡ SEDANG DIGUNAKAN (GILIRAN UTAMA)';
+          stateLabel = 'Aktif · giliran utama';
           cardClass = 'key-card active-turn';
         } else if (!isUnused) {
-          stateLabel = '🟡 TERPAKAI SEBAGIAN (' + pct + '%)';
+          stateLabel = 'Terpakai ' + pct + '%';
         }
 
         return \`
@@ -1273,13 +1125,13 @@ function renderDashboardHtml(): string {
                   Provider: <strong>\${escapeHtml(k.provider)}</strong> &bull; Key: <code>\${escapeHtml(k.masked_key)}</code>
                 </div>
               </div>
-              <span class="pill" style="font-size:0.68rem; padding:3px 8px; background:rgba(255,255,255,0.06);">\${stateLabel}</span>
+              <span class="pill">\${stateLabel}</span>
             </div>
 
             <div class="usage-wrap">
               <div class="usage-labels">
                 <span>Pemakaian Kuota: <strong>\${used} / \${limit} req</strong></span>
-                <span style="color:\${isExhausted ? '#f87171' : pct >= 80 ? '#fbbf24' : '#34d399'}; font-size:0.86rem;">\${pct}%</span>
+                <span style="color:\${isExhausted ? '#bf3b30' : pct >= 80 ? '#a05c08' : '#177a45'}; font-size:0.86rem;">\${pct}%</span>
               </div>
               <div class="usage-bar-bg">
                 <div class="usage-bar-fill" style="width:\${pct}%; background:\${barColor};"></div>
@@ -1288,15 +1140,15 @@ function renderDashboardHtml(): string {
 
             <div style="font-size:0.73rem; color:var(--muted); margin-bottom:10px; display:flex; justify-content:space-between;">
               <span>Sukses: \${k.success_count} | Gagal: \${k.fail_count}</span>
-              <span style="color:#f87171; max-width:190px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="\${escapeHtml(k.last_error || '')}">\${escapeHtml(k.last_error || 'Sehat')}</span>
+              <span style="color:#bf3b30; max-width:190px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="\${escapeHtml(k.last_error || '')}">\${escapeHtml(k.last_error || 'Sehat')}</span>
             </div>
 
             <div style="display:flex; gap:6px; flex-wrap:wrap;">
-              <button class="btn-sm btn-cyan" onclick="replaceApiKey(\${k.id}, '\${escapeHtml(k.name)}', \${limit})">🔑 Ganti API Key</button>
-              <button class="btn-sm" onclick="editQuotaLimit(\${k.id}, \${limit})">🎯 Set Kuota</button>
-              <button class="btn-sm btn-green" onclick="resetSingleKey(\${k.id})">🔄 Reset 0%</button>
-              <button class="btn-sm" onclick="simulateUsage(\${k.id}, \${limit})">🧪 Simulasi 90%</button>
-              <button class="btn-sm btn-danger" onclick="deleteKey(\${k.id})">🗑️</button>
+              <button class="btn-sm btn-cyan" onclick="replaceApiKey(\${k.id}, '\${escapeHtml(k.name)}', \${limit})">Ganti key</button>
+              <button class="btn-sm" onclick="editQuotaLimit(\${k.id}, \${limit})">Set kuota</button>
+              <button class="btn-sm btn-green" onclick="resetSingleKey(\${k.id})">Reset 0%</button>
+              <button class="btn-sm" onclick="simulateUsage(\${k.id}, \${limit})">Simulasi 90%</button>
+              <button class="btn-sm btn-danger" onclick="deleteKey(\${k.id})">Hapus</button>
             </div>
           </div>
         \`;
@@ -1405,10 +1257,10 @@ function renderDashboardHtml(): string {
 
     function renderStatusBadge(id) {
       const r = TEST_RESULTS[id];
-      if (!r) return '<span class="pill" style="background:#1e293b;color:#94a3b8">READY</span>';
-      if (r.status === 'testing') return '<span class="pill" style="background:rgba(245,158,11,0.2);color:#fbbf24">⏳ TESTING...</span>';
-      if (r.status === 'ok') return '<span class="pill pill-green">✅ OK</span>';
-      return '<span class="pill" style="background:rgba(239,68,68,0.2);color:#f87171">❌ GAGAL</span>';
+      if (!r) return '<span class="pill pill-plain">Siap</span>';
+      if (r.status === 'testing') return '<span class="pill" style="background:var(--amber-soft);color:var(--amber)">Mengujui…</span>';
+      if (r.status === 'ok') return '<span class="pill pill-green">OK</span>';
+      return '<span class="pill" style="background:var(--red-soft);color:var(--red)">Gagal</span>';
     }
 
     function renderRows(list) {
@@ -1417,13 +1269,13 @@ function renderDashboardHtml(): string {
         const r = TEST_RESULTS[m.id];
         const lat = r?.latencyMs ? r.latencyMs + ' ms' : '-';
         const detail = r?.status === 'ok'
-          ? '<span style="color:#34d399">' + escapeHtml(r.reply) + '</span>'
-          : '<span style="color:#f87171">' + escapeHtml(r?.error || '') + '</span>';
+          ? '<span style="color:#177a45">' + escapeHtml(r.reply) + '</span>'
+          : '<span style="color:#bf3b30">' + escapeHtml(r?.error || '') + '</span>';
         const safeId = m.id.replace(/[^a-zA-Z0-9_-]/g, '_');
         return \`
           <tr id="row-\${safeId}">
             <td>\${i + 1}</td>
-            <td><code class="id">\${m.id}</code> \${m.featured ? '⭐' : ''}</td>
+            <td><code class="id">\${m.id}</code> </td>
             <td>\${m.providerDisplay}</td>
             <td id="st-\${safeId}">\${renderStatusBadge(m.id)}</td>
             <td id="lat-\${safeId}">\${lat}</td>
@@ -1444,11 +1296,11 @@ function renderDashboardHtml(): string {
       if (latEl) latEl.innerText = r?.latencyMs ? r.latencyMs + ' ms' : '-';
       if (detEl && r) {
         if (r.status === 'testing') {
-          detEl.innerHTML = '<span style="color:#fbbf24">Mengirim prompt...</span>';
+          detEl.innerHTML = '<span style="color:#a05c08">Mengirim prompt…</span>';
         } else if (r.status === 'ok') {
-          detEl.innerHTML = '<span style="color:#34d399">' + escapeHtml(r.reply) + '</span>';
+          detEl.innerHTML = '<span style="color:#177a45">' + escapeHtml(r.reply) + '</span>';
         } else {
-          detEl.innerHTML = '<span style="color:#f87171">' + escapeHtml(r.error) + '</span>';
+          detEl.innerHTML = '<span style="color:#bf3b30">' + escapeHtml(r.error) + '</span>';
         }
       }
     }
@@ -1535,7 +1387,7 @@ function renderDashboardHtml(): string {
       bulkRunning = false;
       document.getElementById('bt-start-btn').disabled = false;
       document.getElementById('bt-stop-btn').disabled = true;
-      document.getElementById('bt-state').innerText = bulkStopRequested ? 'Dihentikan' : 'Selesai ✅';
+      document.getElementById('bt-state').innerText = bulkStopRequested ? 'Dihentikan' : 'Selesai';
       document.getElementById('bt-current').innerText = '-';
     }
 
