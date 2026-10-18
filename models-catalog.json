@@ -1,0 +1,5487 @@
+{
+  "models": [
+    {
+      "id": "deepseek/deepseek-v4.1-flash-1017-fast",
+      "displayName": "DeepSeek V4.1 Flash 1017 Fast",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.6,
+      "outputCost": 2.4,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "elorian/glimpse",
+      "displayName": "Glimpse",
+      "providerDisplay": "Elorian",
+      "inputCost": 0.6,
+      "outputCost": 3,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "displayName": "DeepSeek V4.1 Flash 1017",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "reflection/beam-1.0-501b-a23b",
+      "displayName": "Beam 1.0 501B A23B",
+      "providerDisplay": "Reflection",
+      "inputCost": 1,
+      "outputCost": 3,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-spark-open",
+      "displayName": "Muse Spark Open",
+      "providerDisplay": "Meta",
+      "inputCost": 1.25,
+      "outputCost": 4.25,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "unbiased/pareto-26.10",
+      "displayName": "Pareto 26.10",
+      "providerDisplay": "Unbiased",
+      "inputCost": 0.7999999999999999,
+      "outputCost": 3.1999999999999997,
+      "contextWindow": 1048576,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-3.5-super-vl",
+      "displayName": "NVIDIA Nemotron 3.5 Super VL",
+      "providerDisplay": "NVIDIA",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "stealth/cat-jam",
+      "displayName": "Cat Jam",
+      "providerDisplay": "Stealth",
+      "inputCost": null,
+      "outputCost": null,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "unbiased/pareto-26.9",
+      "displayName": "Pareto 26.9",
+      "providerDisplay": "Unbiased",
+      "inputCost": 2.5,
+      "outputCost": 7.5,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-4-argon",
+      "displayName": "Gemini 4 Argon",
+      "providerDisplay": "Google",
+      "inputCost": 2,
+      "outputCost": 10,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": true,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "liquid/lfm-2.5-24b-a2b",
+      "displayName": "LFM2.5-24B-A2B",
+      "providerDisplay": "Liquid",
+      "inputCost": 0.049999999999999996,
+      "outputCost": 0.7,
+      "contextWindow": 128000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "liquid/lfm2.5-24b-a2b",
+      "displayName": "LFM2.5-24B-A2B",
+      "providerDisplay": "Liquid",
+      "inputCost": 0.049999999999999996,
+      "outputCost": 0.7,
+      "contextWindow": 128000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-wonder",
+      "displayName": "Muse Wonder",
+      "providerDisplay": "Meta",
+      "inputCost": 4,
+      "outputCost": 20,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": true,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-wonder-1.0",
+      "displayName": "Muse Wonder",
+      "providerDisplay": "Meta",
+      "inputCost": 4,
+      "outputCost": 20,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "callstack/apex",
+      "displayName": "Apex",
+      "providerDisplay": "Callstack",
+      "inputCost": 0.5,
+      "outputCost": 3,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-5-5-fast",
+      "displayName": "Claude Opus 5.5 (Fast)",
+      "providerDisplay": "Anthropic",
+      "inputCost": 8,
+      "outputCost": 40,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-5-5",
+      "displayName": "Claude Opus 5.5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 4,
+      "outputCost": 20,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": true,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-5-5",
+      "displayName": "Claude Sonnet 5.5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 2,
+      "outputCost": 10,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-haiku-5-5",
+      "displayName": "Claude Haiku 5.5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.5,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": true,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "stealth/glyph-cluster",
+      "displayName": "Glyph Cluster",
+      "providerDisplay": "Stealth",
+      "inputCost": null,
+      "outputCost": null,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-nano-banana-2.1",
+      "displayName": "Nano Banana 2.1",
+      "providerDisplay": "Google",
+      "inputCost": 1.5,
+      "outputCost": 7.5,
+      "contextWindow": 65536,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "image",
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-large-4",
+      "displayName": "Mistral Large 4",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.6799999999999999,
+      "outputCost": 2.09,
+      "contextWindow": 524288,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-large-4-0",
+      "displayName": "Mistral Large 4",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.6799999999999999,
+      "outputCost": 2.09,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6.1-sol-fast",
+      "displayName": "GPT-6.1 Sol (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 4,
+      "outputCost": 20,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6.1-sol",
+      "displayName": "GPT-6.1 Sol",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 10,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": true,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6.1-sol-pro",
+      "displayName": "GPT-6.1 Sol Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 10,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-fast",
+      "displayName": "DeepSeek V4.1 Flash Fast",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.6,
+      "outputCost": 2.4,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "displayName": "DeepSeek V4.1 Flash",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.04,
+      "outputCost": 0.144,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash",
+      "displayName": "Ling 3.1 Flash",
+      "providerDisplay": "Inclusionai",
+      "inputCost": 0.075,
+      "outputCost": 0.22499999999999998,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meituan/longcat-2.5-preview",
+      "displayName": "LongCat 2.5 Preview",
+      "providerDisplay": "Meituan",
+      "inputCost": 0.3,
+      "outputCost": 1.2,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "perceptron/perceptron-mk1.5",
+      "displayName": "Perceptron Mk1.5",
+      "providerDisplay": "Perceptron",
+      "inputCost": 0.15,
+      "outputCost": 1.5,
+      "contextWindow": 36864,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "typesafe/jev-router",
+      "displayName": "Jev Router",
+      "providerDisplay": "Typesafe",
+      "inputCost": null,
+      "outputCost": null,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-max-prime",
+      "displayName": "Qwen 3.8 Max Prime",
+      "providerDisplay": "Qwen",
+      "inputCost": 4,
+      "outputCost": 12,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "aion-labs/aion-3.5",
+      "displayName": "Aion 3.5",
+      "providerDisplay": "Aion-labs",
+      "inputCost": 3,
+      "outputCost": 6,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "fireworks/ember-1",
+      "displayName": "Ember-1",
+      "providerDisplay": "Fireworks",
+      "inputCost": 3,
+      "outputCost": 15,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "aion-labs/aion-3.5-mini",
+      "displayName": "Aion 3.5 Mini",
+      "providerDisplay": "Aion-labs",
+      "inputCost": 0.7,
+      "outputCost": 1.4,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.3-prime",
+      "displayName": "GLM 5.3 Prime",
+      "providerDisplay": "Zhipu",
+      "inputCost": 2.8,
+      "outputCost": 8.8,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "upstage/solar-mini4",
+      "displayName": "Solar Mini 4",
+      "providerDisplay": "Upstage",
+      "inputCost": 0.049999999999999996,
+      "outputCost": 0.19999999999999998,
+      "contextWindow": 524288,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-sol-fast",
+      "displayName": "GPT-6 Sol (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 4,
+      "outputCost": 20,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-sol",
+      "displayName": "GPT-6 Sol",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 10,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-sol-pro",
+      "displayName": "GPT-6 Sol Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 10,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "cohere/command-a-plus",
+      "displayName": "Command A+",
+      "providerDisplay": "Cohere",
+      "inputCost": 0.3,
+      "outputCost": 1.5,
+      "contextWindow": 192000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-luna-fast",
+      "displayName": "GPT-6 Luna (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 1,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-luna",
+      "displayName": "GPT-6 Luna",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.5,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-luna-pro",
+      "displayName": "GPT-6 Luna Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.5,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "displayName": "MiMo V2.6 Pro UltraSpeed",
+      "providerDisplay": "Xiaomi",
+      "inputCost": 4.35,
+      "outputCost": 8.7,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.7",
+      "displayName": "Grok 4.7",
+      "providerDisplay": "Spacexai",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 500000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4.7",
+      "displayName": "Grok 4.7",
+      "providerDisplay": "xAI",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 500000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": true,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro",
+      "displayName": "MiMo V2.6 Pro",
+      "providerDisplay": "Xiaomi",
+      "inputCost": 0.435,
+      "outputCost": 0.87,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash",
+      "displayName": "MiMo V2.6 Flash",
+      "providerDisplay": "Xiaomi",
+      "inputCost": 0.14,
+      "outputCost": 0.28,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "stepfun/step-5-preview",
+      "displayName": "Step 5 Preview",
+      "providerDisplay": "Stepfun",
+      "inputCost": 1,
+      "outputCost": 2.7,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.3-flashx",
+      "displayName": "GLM 5.3 FlashX",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.37,
+      "outputCost": 1.25,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "prism-ml/ternary-bonsai-2-27b",
+      "displayName": "Ternary Bonsai 2 27B",
+      "providerDisplay": "Prism-ml",
+      "inputCost": 0.075,
+      "outputCost": 0.5,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-omni-flash",
+      "displayName": "Qwen 3.8 Omni Flash",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.15,
+      "outputCost": 0.47,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "quiverai/arrow-2-telos",
+      "displayName": "Arrow 2 Telos",
+      "providerDisplay": "Quiverai",
+      "inputCost": 6,
+      "outputCost": 30,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "quiverai/arrow-2",
+      "displayName": "Arrow 2",
+      "providerDisplay": "Quiverai",
+      "inputCost": 4,
+      "outputCost": 20,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "sakana/fugu-ultra-v2",
+      "displayName": "Fugu Ultra v2",
+      "providerDisplay": "Sakana",
+      "inputCost": 5,
+      "outputCost": 30,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "sakana/fugu-max",
+      "displayName": "Fugu Max",
+      "providerDisplay": "Sakana",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "nex-agi/nex-n2.5-pro",
+      "displayName": "Nex-N2.5-Pro",
+      "providerDisplay": "Nex-agi",
+      "inputCost": 0.075,
+      "outputCost": 0.25,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-vl",
+      "displayName": "Ling 3.0 Flash VL",
+      "providerDisplay": "Inclusionai",
+      "inputCost": 0.06,
+      "outputCost": 0.18,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "inception/mercury-2.5",
+      "displayName": "Mercury 2.5",
+      "providerDisplay": "Inception",
+      "inputCost": 0.04,
+      "outputCost": 0.15,
+      "contextWindow": 260000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-astra-fast",
+      "displayName": "GPT-6 Astra (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 20,
+      "outputCost": 100,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-astra",
+      "displayName": "GPT-6 Astra",
+      "providerDisplay": "OpenAI",
+      "inputCost": 10,
+      "outputCost": 50,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-astra-pro",
+      "displayName": "GPT-6 Astra Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 10,
+      "outputCost": 50,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "displayName": "Ling 3.0 Flash Sante",
+      "providerDisplay": "Inclusionai",
+      "inputCost": 0.075,
+      "outputCost": 0.22,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.3-fast",
+      "displayName": "GLM 5.3 Fast",
+      "providerDisplay": "Zhipu",
+      "inputCost": 2.0999999999999996,
+      "outputCost": 6.6000000000000005,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.3",
+      "displayName": "GLM 5.3",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.079,
+      "outputCost": 1.7999999999999998,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.3-flash",
+      "displayName": "GLM 5.3 Flash",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.048,
+      "outputCost": 0.19999999999999998,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": true,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-spark-1.3",
+      "displayName": "Muse Spark 1.3",
+      "providerDisplay": "Meta",
+      "inputCost": 1.25,
+      "outputCost": 4.25,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "displayName": "Gemini 3.8 Flash",
+      "providerDisplay": "Google",
+      "inputCost": 0.8250000000000001,
+      "outputCost": 4.125,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-spark-1.3-contributor",
+      "displayName": "Muse Spark 1.3 Contributor",
+      "providerDisplay": "Meta",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.19999999999999998,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-max-0902",
+      "displayName": "Qwen3.8 Max 0902",
+      "providerDisplay": "Qwen",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-fable-5-1",
+      "displayName": "Claude Fable 5.1",
+      "providerDisplay": "Anthropic",
+      "inputCost": 10,
+      "outputCost": 50,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "ibm-granite/granite-4.2-8b",
+      "displayName": "Granite 4.2 8B",
+      "providerDisplay": "Ibm-granite",
+      "inputCost": 0.06,
+      "outputCost": 0.25,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "tencent/hy4-preview",
+      "displayName": "Tencent Hy4 Preview",
+      "providerDisplay": "Tencent",
+      "inputCost": 0.834,
+      "outputCost": 2.501,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-fin",
+      "displayName": "Ling 3.0 Flash Fin",
+      "providerDisplay": "Inclusionai",
+      "inputCost": 0.075,
+      "outputCost": 0.22,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-flash",
+      "displayName": "Qwen 3.8 Flash",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.15,
+      "outputCost": 0.47,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-vision-exp",
+      "displayName": "DeepSeek V4 Flash Vision Exp",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.21559999999999999,
+      "outputCost": 0.6468,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-27b",
+      "displayName": "Qwen3.8 27B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.24,
+      "outputCost": 2.2,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.7-flash",
+      "displayName": "Gemini 3.7 Flash",
+      "providerDisplay": "Google",
+      "inputCost": 0.75,
+      "outputCost": 3.75,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mixedbread/toast-1",
+      "displayName": "Toast 1",
+      "providerDisplay": "Mixedbread",
+      "inputCost": 0.3,
+      "outputCost": 0.72,
+      "contextWindow": 131000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.6",
+      "displayName": "Grok 4.6",
+      "providerDisplay": "Spacexai",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 500000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4.6",
+      "displayName": "Grok 4.6",
+      "providerDisplay": "xAI",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 500000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "skydive/glide",
+      "displayName": "Skydive Glide",
+      "providerDisplay": "Skydive",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 500000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": true,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "displayName": "DeepSeek V4 Pro 0813",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.66,
+      "outputCost": 1.9800000000000002,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance-seed/seed-2-1-turbo",
+      "displayName": "Seed 2.1 Turbo",
+      "providerDisplay": "ByteDance",
+      "inputCost": 0.5,
+      "outputCost": 2.5,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance-seed/seed-2.0-code",
+      "displayName": "Seed-2.0-Code",
+      "providerDisplay": "ByteDance",
+      "inputCost": 0.5,
+      "outputCost": 3,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "sakana/sakana-namazu",
+      "displayName": "Sakana Namazu",
+      "providerDisplay": "Sakana",
+      "inputCost": 0.95,
+      "outputCost": 4,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning",
+      "displayName": "Nemotron 3.5 Lightning 30B",
+      "providerDisplay": "NVIDIA",
+      "inputCost": 0.07,
+      "outputCost": 0.19999999999999998,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-glimmer-30b",
+      "displayName": "Muse Glimmer 30B",
+      "providerDisplay": "Meta",
+      "inputCost": 0.3,
+      "outputCost": 1.2,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "upstage/solar-pro4",
+      "displayName": "Solar Pro 4",
+      "providerDisplay": "Upstage",
+      "inputCost": 0.09,
+      "outputCost": 0.36,
+      "contextWindow": 524288,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash",
+      "displayName": "Ling 3.0 Flash",
+      "providerDisplay": "Inclusionai",
+      "inputCost": 0.020999999999999998,
+      "outputCost": 0.063,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-spark-1.2",
+      "displayName": "Muse Spark 1.2",
+      "providerDisplay": "Meta",
+      "inputCost": 1.25,
+      "outputCost": 4.25,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-spark-1.2-contributor",
+      "displayName": "Muse Spark 1.2 Contributor",
+      "providerDisplay": "Meta",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.19999999999999998,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "sakana/namazu",
+      "displayName": "Sakana Namazu",
+      "providerDisplay": "Sakana",
+      "inputCost": 0.95,
+      "outputCost": 4,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-max",
+      "displayName": "Qwen 3.8 Max",
+      "providerDisplay": "Qwen",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-2.4t-a95b",
+      "displayName": "Qwen3.8 2.4T A95B",
+      "providerDisplay": "Qwen",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "thinkingmachines/inkling-small",
+      "displayName": "Inkling Small",
+      "providerDisplay": "Thinkingmachines",
+      "inputCost": 0.44999999999999996,
+      "outputCost": 1.2,
+      "contextWindow": 524288,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.7-flash",
+      "displayName": "Qwen 3.7 Flash",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.03,
+      "outputCost": 0.13,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k3-fast",
+      "displayName": "Kimi K3 Fast",
+      "providerDisplay": "Moonshot",
+      "inputCost": 4.5,
+      "outputCost": 22.5,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "displayName": "Kimi K3",
+      "providerDisplay": "Moonshot",
+      "inputCost": 0.30400000000000005,
+      "outputCost": 11.936,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-5-fast",
+      "displayName": "Claude Opus 5 (Fast)",
+      "providerDisplay": "Anthropic",
+      "inputCost": 10,
+      "outputCost": 50,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-5",
+      "displayName": "Claude Opus 5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 5,
+      "outputCost": 25,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-5",
+      "displayName": "Claude Sonnet 5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 2,
+      "outputCost": 10,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.6-flash",
+      "displayName": "Gemini 3.6 Flash",
+      "providerDisplay": "Google",
+      "inputCost": 0.75,
+      "outputCost": 3.75,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meituan/longcat-2.0",
+      "displayName": "LongCat 2.0",
+      "providerDisplay": "Meituan",
+      "inputCost": 0.3,
+      "outputCost": 1.2,
+      "contextWindow": 1048756,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "poolside/laguna-s-2.1",
+      "displayName": "Laguna S 2.1",
+      "providerDisplay": "Poolside",
+      "inputCost": 0.09,
+      "outputCost": 0.18,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openrouter/auto-beta",
+      "displayName": "Auto Router (Beta)",
+      "providerDisplay": "OpenRouter",
+      "inputCost": null,
+      "outputCost": null,
+      "contextWindow": 2000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text",
+        "image"
+      ]
+    },
+    {
+      "id": "thinkingmachines/inkling",
+      "displayName": "Inkling",
+      "providerDisplay": "Thinkingmachines",
+      "inputCost": 1,
+      "outputCost": 4.05,
+      "contextWindow": 524288,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-sol-fast",
+      "displayName": "GPT 5.6 Sol (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 8,
+      "outputCost": 40,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-sol",
+      "displayName": "GPT 5.6 Sol",
+      "providerDisplay": "OpenAI",
+      "inputCost": 4,
+      "outputCost": 20,
+      "contextWindow": 272000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-sol-pro",
+      "displayName": "GPT-5.6 Sol Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 4,
+      "outputCost": 20,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-terra-fast",
+      "displayName": "GPT 5.6 Terra (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 4,
+      "outputCost": 24,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-terra",
+      "displayName": "GPT 5.6 Terra",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 12,
+      "contextWindow": 272000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-terra-pro",
+      "displayName": "GPT-5.6 Terra Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 12,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/muse-spark-1.1",
+      "displayName": "Muse Spark 1.1",
+      "providerDisplay": "Meta",
+      "inputCost": 1.25,
+      "outputCost": 4.25,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-luna-fast",
+      "displayName": "GPT 5.6 Luna (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.39999999999999997,
+      "outputCost": 2.4,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-luna",
+      "displayName": "GPT 5.6 Luna",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 1.2,
+      "contextWindow": 272000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.6-luna-pro",
+      "displayName": "GPT-5.6 Luna Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 1.2,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.5",
+      "displayName": "Grok 4.5",
+      "providerDisplay": "Spacexai",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 500000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4.5",
+      "displayName": "Grok 4.5",
+      "providerDisplay": "xAI",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 500000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "aion-labs/aion-3.0",
+      "displayName": "Aion-3.0",
+      "providerDisplay": "Aion-labs",
+      "inputCost": 3,
+      "outputCost": 6,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "aion-labs/aion-3.0-mini",
+      "displayName": "Aion-3.0-Mini",
+      "providerDisplay": "Aion-labs",
+      "inputCost": 0.7,
+      "outputCost": 1.4,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "tencent/hy3-preview",
+      "displayName": "Hy3 preview",
+      "providerDisplay": "Tencent",
+      "inputCost": 0.18,
+      "outputCost": 0.6,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "tencent/hy3",
+      "displayName": "Hy3",
+      "providerDisplay": "Tencent",
+      "inputCost": 0.13199999999999998,
+      "outputCost": 0.5279999999999999,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "poolside/laguna-xs-2.1",
+      "displayName": "Laguna XS 2.1",
+      "providerDisplay": "Poolside",
+      "inputCost": 0.06,
+      "outputCost": 0.12,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-fable-5",
+      "displayName": "Claude Fable 5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 10,
+      "outputCost": 50,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.2-fast",
+      "displayName": "GLM 5.2 Fast",
+      "providerDisplay": "Zhipu",
+      "inputCost": 2.8,
+      "outputCost": 8.8,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "displayName": "GLM 5.2",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.62,
+      "outputCost": 2.42,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance/seed-2.1-turbo",
+      "displayName": "Seed 2.1 Turbo",
+      "providerDisplay": "Bytedance",
+      "inputCost": 0.5,
+      "outputCost": 2.5,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "sakana/fugu-ultra",
+      "displayName": "Fugu Ultra",
+      "providerDisplay": "Sakana",
+      "inputCost": 5,
+      "outputCost": 30,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3-pro-image",
+      "displayName": "Nano Banana Pro (Gemini 3 Pro Image)",
+      "providerDisplay": "Google",
+      "inputCost": 2,
+      "outputCost": 12,
+      "contextWindow": 65536,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "image",
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3-flash",
+      "displayName": "Gemini 3 Flash",
+      "providerDisplay": "Google",
+      "inputCost": 0.5,
+      "outputCost": 3,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3-flash-preview",
+      "displayName": "Gemini 3 Flash Preview",
+      "providerDisplay": "Google",
+      "inputCost": 0.5,
+      "outputCost": 3,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2.7-code-highspeed",
+      "displayName": "Kimi K2.7 Code High Speed",
+      "providerDisplay": "Moonshot",
+      "inputCost": 1.9,
+      "outputCost": 8,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openrouter/fusion",
+      "displayName": "OpenRouter Fusion",
+      "providerDisplay": "OpenRouter",
+      "inputCost": null,
+      "outputCost": null,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2.7-code",
+      "displayName": "Kimi K2.7 Code",
+      "providerDisplay": "Moonshot",
+      "inputCost": 0.6712,
+      "outputCost": 3.35,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "displayName": "Nemotron 3 Ultra",
+      "providerDisplay": "NVIDIA",
+      "inputCost": 0.6,
+      "outputCost": 2.4,
+      "contextWindow": 512288,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.7-plus",
+      "displayName": "Qwen 3.7 Plus",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.32,
+      "outputCost": 1.28,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m3",
+      "displayName": "MiniMax M3",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.3,
+      "outputCost": 1.2,
+      "contextWindow": 524288,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4-8-fast",
+      "displayName": "Claude Opus 4.8 (Fast)",
+      "providerDisplay": "Anthropic",
+      "inputCost": 10,
+      "outputCost": 50,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4-8",
+      "displayName": "Claude Opus 4.8",
+      "providerDisplay": "Anthropic",
+      "inputCost": 5,
+      "outputCost": 25,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.1-pro-preview-customtools",
+      "displayName": "Gemini 3.1 Pro Preview Custom Tools",
+      "providerDisplay": "Google",
+      "inputCost": 2,
+      "outputCost": 12,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.1-pro-preview",
+      "displayName": "Gemini 3.1 Pro Preview",
+      "providerDisplay": "Google",
+      "inputCost": 2,
+      "outputCost": 12,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.1-flash-image",
+      "displayName": "Nano Banana 2",
+      "providerDisplay": "Google",
+      "inputCost": 0.5,
+      "outputCost": 60,
+      "contextWindow": 0,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "image"
+      ]
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite",
+      "displayName": "Gemini 3.1 Flash Lite",
+      "providerDisplay": "Google",
+      "inputCost": 0.25,
+      "outputCost": 1.5,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite-preview",
+      "displayName": "Gemini 3.1 Flash Lite Preview",
+      "providerDisplay": "Google",
+      "inputCost": 0.25,
+      "outputCost": 1.5,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "stepfun/step-3.7-flash",
+      "displayName": "Step 3.7 Flash",
+      "providerDisplay": "Stepfun",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 1.15,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.7-max",
+      "displayName": "Qwen 3.7 Max",
+      "providerDisplay": "Qwen",
+      "inputCost": 1.475,
+      "outputCost": 4.425,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-build-0.1",
+      "displayName": "Grok Build 0.1",
+      "providerDisplay": "Spacexai",
+      "inputCost": 1,
+      "outputCost": 2,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "x-ai/grok-build-0.1",
+      "displayName": "Grok Build 0.1",
+      "providerDisplay": "xAI",
+      "inputCost": 1,
+      "outputCost": 2,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.5-flash",
+      "displayName": "Gemini 3.5 Flash",
+      "providerDisplay": "Google",
+      "inputCost": 1.5,
+      "outputCost": 9,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-3.5-flash-lite",
+      "displayName": "Gemini 3.5 Flash Lite",
+      "providerDisplay": "Google",
+      "inputCost": 0.3,
+      "outputCost": 2.5,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-chat-latest",
+      "displayName": "GPT Chat Latest",
+      "providerDisplay": "OpenAI",
+      "inputCost": 5,
+      "outputCost": 30,
+      "contextWindow": 400000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-audio",
+      "displayName": "GPT Audio",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2.5,
+      "outputCost": 10,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text",
+        "audio"
+      ]
+    },
+    {
+      "id": "openai/gpt-audio-mini",
+      "displayName": "GPT Audio Mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.6,
+      "outputCost": 2.4,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text",
+        "audio"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.3",
+      "displayName": "Grok 4.3",
+      "providerDisplay": "Spacexai",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4.3",
+      "displayName": "Grok 4.3",
+      "providerDisplay": "xAI",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-medium-3.5",
+      "displayName": "Mistral Medium Latest",
+      "providerDisplay": "Mistral",
+      "inputCost": 1.5,
+      "outputCost": 7.5,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.6-flash",
+      "displayName": "Qwen3.6 Flash",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.1875,
+      "outputCost": 1.125,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.6-35b-a3b",
+      "displayName": "Qwen3.6 35B A3B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.15,
+      "outputCost": 1,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.5-pro",
+      "displayName": "GPT 5.5 Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 30,
+      "outputCost": 180,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.5-fast",
+      "displayName": "GPT 5.5 (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 12.5,
+      "outputCost": 75,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.5",
+      "displayName": "GPT 5.5",
+      "providerDisplay": "OpenAI",
+      "inputCost": 5,
+      "outputCost": 30,
+      "contextWindow": 272000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro",
+      "displayName": "DeepSeek V4 Pro",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.20879999999999999,
+      "outputCost": 0.41759999999999997,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash",
+      "displayName": "DeepSeek V4 Flash",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.091,
+      "outputCost": 0.182,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-0731",
+      "displayName": "DeepSeek V4 Flash 0731",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.0086,
+      "outputCost": 0.44999999999999996,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "xiaomi/mimo-v2.5-pro",
+      "displayName": "MiMo V2.5 Pro",
+      "providerDisplay": "Xiaomi",
+      "inputCost": 0.435,
+      "outputCost": 0.87,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "xiaomi/mimo-v2.5",
+      "displayName": "MiMo M2.5",
+      "providerDisplay": "Xiaomi",
+      "inputCost": 0.14,
+      "outputCost": 0.28,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.6-27b",
+      "displayName": "Qwen 3.6 27B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.25,
+      "outputCost": 2,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-image-2",
+      "displayName": "GPT Image 2",
+      "providerDisplay": "OpenAI",
+      "inputCost": 5,
+      "outputCost": 30,
+      "contextWindow": 0,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "image"
+      ]
+    },
+    {
+      "id": "openrouter/pareto-code",
+      "displayName": "Pareto Code Router",
+      "providerDisplay": "OpenRouter",
+      "inputCost": null,
+      "outputCost": null,
+      "contextWindow": 2000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2.6",
+      "displayName": "Kimi K2.6",
+      "providerDisplay": "Moonshot",
+      "inputCost": 0.65,
+      "outputCost": 3.41,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4-7",
+      "displayName": "Claude Opus 4.7",
+      "providerDisplay": "Anthropic",
+      "inputCost": 5,
+      "outputCost": 25,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "displayName": "GLM 5.1",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.966,
+      "outputCost": 3.036,
+      "contextWindow": 202752,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.6-plus",
+      "displayName": "Qwen 3.6 Plus",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.325,
+      "outputCost": 1.95,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemma-4-31b-it",
+      "displayName": "Gemma 4 31B IT",
+      "providerDisplay": "Google",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it",
+      "displayName": "Google Gemma 4 26B A4B",
+      "providerDisplay": "Google",
+      "inputCost": 0.0675,
+      "outputCost": 0.22499999999999998,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5v-turbo",
+      "displayName": "GLM 5V Turbo",
+      "providerDisplay": "Zhipu",
+      "inputCost": 1.2,
+      "outputCost": 4,
+      "contextWindow": 202752,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "arcee-ai/trinity-large-thinking",
+      "displayName": "Trinity Large Thinking",
+      "providerDisplay": "Arcee-ai",
+      "inputCost": 0.25,
+      "outputCost": 0.7999999999999999,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "x-ai/grok-4.20",
+      "displayName": "Grok 4.20",
+      "providerDisplay": "xAI",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 2000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "rekaai/reka-edge",
+      "displayName": "Reka Edge",
+      "providerDisplay": "Rekaai",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.09999999999999999,
+      "contextWindow": 16384,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2.7-highspeed",
+      "displayName": "MiniMax M2.7 High Speed",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.6,
+      "outputCost": 2.4,
+      "contextWindow": 204800,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2.7",
+      "displayName": "MiniMax M2.7",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.3,
+      "outputCost": 1.2,
+      "contextWindow": 204800,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-small-2603",
+      "displayName": "Mistral Small 4",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5-turbo",
+      "displayName": "GLM 5 Turbo",
+      "providerDisplay": "Zhipu",
+      "inputCost": 1.2,
+      "outputCost": 4,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-5",
+      "displayName": "GLM 5",
+      "providerDisplay": "Zhipu",
+      "inputCost": 1,
+      "outputCost": 3.1999999999999997,
+      "contextWindow": 204800,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.20-non-reasoning-beta",
+      "displayName": "Grok 4.20 Beta Non-Reasoning",
+      "providerDisplay": "Spacexai",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 2000000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.20-reasoning-beta",
+      "displayName": "Grok 4.20 Beta Reasoning",
+      "providerDisplay": "Spacexai",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 2000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.20-multi-agent-beta",
+      "displayName": "Grok 4.20 Multi Agent Beta",
+      "providerDisplay": "Spacexai",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 2000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b",
+      "displayName": "NVIDIA Nemotron 3 Super 120B A12B",
+      "providerDisplay": "NVIDIA",
+      "inputCost": 0.08,
+      "outputCost": 0.44999999999999996,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.20-multi-agent",
+      "displayName": "Grok 4.20 Multi-Agent",
+      "providerDisplay": "Spacexai",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 2000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.20-non-reasoning",
+      "displayName": "Grok 4.20 Non-Reasoning",
+      "providerDisplay": "Spacexai",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 2000000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.20-reasoning",
+      "displayName": "Grok 4.20 Reasoning",
+      "providerDisplay": "Spacexai",
+      "inputCost": 1.25,
+      "outputCost": 2.5,
+      "contextWindow": 2000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance-seed/seed-2.0-lite",
+      "displayName": "Seed-2.0-Lite",
+      "providerDisplay": "ByteDance",
+      "inputCost": 0.25,
+      "outputCost": 2,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance-seed/seed-2.0-mini",
+      "displayName": "Seed-2.0-Mini",
+      "providerDisplay": "ByteDance",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-9b",
+      "displayName": "Qwen3.5-9B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.15,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.4-pro",
+      "displayName": "GPT 5.4 Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 30,
+      "outputCost": 180,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.4-fast",
+      "displayName": "GPT 5.4 (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 5,
+      "outputCost": 30,
+      "contextWindow": 1050000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.4",
+      "displayName": "GPT 5.4",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2.5,
+      "outputCost": 15,
+      "contextWindow": 272000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.4-mini-fast",
+      "displayName": "GPT 5.4 Mini (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.5,
+      "outputCost": 9,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.4-mini",
+      "displayName": "GPT 5.4 Mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.75,
+      "outputCost": 4.5,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.4-nano",
+      "displayName": "GPT 5.4 Nano",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 1.25,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-122b-a10b",
+      "displayName": "Qwen3.5-122B-A10B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.26,
+      "outputCost": 2.08,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-27b",
+      "displayName": "Qwen3.5-27B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.26,
+      "outputCost": 2.6,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-35b-a3b",
+      "displayName": "Qwen3.5-35B-A3B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.15,
+      "outputCost": 1,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-flash-02-23",
+      "displayName": "Qwen3.5-Flash",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.065,
+      "outputCost": 0.26,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "inception/mercury-2",
+      "displayName": "Mercury 2",
+      "providerDisplay": "Inception",
+      "inputCost": 0.25,
+      "outputCost": 0.75,
+      "contextWindow": 128000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-flash",
+      "displayName": "Qwen 3.5 Flash",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "aion-labs/aion-2.0",
+      "displayName": "Aion-2.0",
+      "providerDisplay": "Aion-labs",
+      "inputCost": 0.7999999999999999,
+      "outputCost": 1.5999999999999999,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "displayName": "Qwen3.5 397B A17B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.5,
+      "outputCost": 3.5999999999999996,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-plus",
+      "displayName": "Qwen 3.5 Plus",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.39999999999999997,
+      "outputCost": 2.4,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-plus-20260420",
+      "displayName": "Qwen3.5 Plus 2026-04-20",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.3,
+      "outputCost": 1.7999999999999998,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3.5-plus-02-15",
+      "displayName": "Qwen3.5 Plus 2026-02-15",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.26,
+      "outputCost": 1.56,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2.5-highspeed",
+      "displayName": "MiniMax M2.5 High Speed",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.6,
+      "outputCost": 2.4,
+      "contextWindow": 204800,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2.5",
+      "displayName": "MiniMax M2.5",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.27,
+      "outputCost": 0.95,
+      "contextWindow": 196608,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4-6",
+      "displayName": "Claude Opus 4.6",
+      "providerDisplay": "Anthropic",
+      "inputCost": 5,
+      "outputCost": 25,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-4-6",
+      "displayName": "Claude Sonnet 4.6",
+      "providerDisplay": "Anthropic",
+      "inputCost": 3,
+      "outputCost": 15,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.3-codex-fast",
+      "displayName": "GPT 5.3 Codex (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 3.5,
+      "outputCost": 28,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.3-codex",
+      "displayName": "GPT 5.3 Codex",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.75,
+      "outputCost": 14,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "stepfun/step-3.5-flash",
+      "displayName": "Step 3.5 Flash",
+      "providerDisplay": "Stepfun",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.3,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "upstage/solar-pro-3",
+      "displayName": "Solar Pro 3",
+      "providerDisplay": "Upstage",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2.5",
+      "displayName": "Kimi K2.5",
+      "providerDisplay": "Moonshot",
+      "inputCost": 0.5,
+      "outputCost": 2.5,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-max-thinking",
+      "displayName": "Qwen 3 Max Thinking",
+      "providerDisplay": "Qwen",
+      "inputCost": 1.2,
+      "outputCost": 6,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.7-flashx",
+      "displayName": "GLM 4.7 FlashX",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.06,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2.1",
+      "displayName": "MiniMax M2.1",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.3,
+      "outputCost": 1.2,
+      "contextWindow": 204800,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2.1-lightning",
+      "displayName": "MiniMax M2.1 Lightning",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.3,
+      "outputCost": 2.4,
+      "contextWindow": 204800,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance-seed/seed-1.6",
+      "displayName": "Seed 1.6",
+      "providerDisplay": "ByteDance",
+      "inputCost": 0.25,
+      "outputCost": 2,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance-seed/seed-1.6-flash",
+      "displayName": "Seed 1.6 Flash",
+      "providerDisplay": "ByteDance",
+      "inputCost": 0.075,
+      "outputCost": 0.3,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.7",
+      "displayName": "GLM 4.7",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.54,
+      "outputCost": 1.9800000000000002,
+      "contextWindow": 204800,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.7-flash",
+      "displayName": "GLM 4.7 Flash",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.060500000000000005,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 202752,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.2-pro",
+      "displayName": "GPT 5.2",
+      "providerDisplay": "OpenAI",
+      "inputCost": 21,
+      "outputCost": 168,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.2-fast",
+      "displayName": "GPT 5.2 (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 3.5,
+      "outputCost": 28,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.2-codex",
+      "displayName": "GPT 5.2 Codex",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.75,
+      "outputCost": 14,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.2",
+      "displayName": "GPT 5.2",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.75,
+      "outputCost": 14,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.2-chat",
+      "displayName": "GPT-5.2 Chat",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.75,
+      "outputCost": 14,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-30b-a3b",
+      "displayName": "Nemotron 3 Nano 30B A3B",
+      "providerDisplay": "NVIDIA",
+      "inputCost": 0.06,
+      "outputCost": 0.24,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/devstral-2512",
+      "displayName": "Devstral 2 2512",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.39999999999999997,
+      "outputCost": 2,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "relace/relace-search",
+      "displayName": "Relace Search",
+      "providerDisplay": "Relace",
+      "inputCost": 1,
+      "outputCost": 3,
+      "contextWindow": 256000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.6v",
+      "displayName": "GLM 4.6V",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.3,
+      "outputCost": 0.8999999999999999,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-large-3",
+      "displayName": "Mistral Large 3",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.5,
+      "outputCost": 1.5,
+      "contextWindow": 256000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-2-lite",
+      "displayName": "Nova 2 Lite",
+      "providerDisplay": "Amazon",
+      "inputCost": 0.3,
+      "outputCost": 2.5,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-2-lite-v1",
+      "displayName": "Nova 2 Lite",
+      "providerDisplay": "Amazon",
+      "inputCost": 0.3,
+      "outputCost": 2.5,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/ministral-14b",
+      "displayName": "Ministral 14B",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.19999999999999998,
+      "contextWindow": 256000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/ministral-14b-2512",
+      "displayName": "Ministral 3 14B 2512",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.19999999999999998,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-safeguard-120b",
+      "displayName": "GPT OSS Safeguard 120B",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 128000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/ministral-8b-2512",
+      "displayName": "Ministral 3 8B 2512",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.15,
+      "outputCost": 0.15,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/ministral-3b-2512",
+      "displayName": "Ministral 3 3B 2512",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.09999999999999999,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-thinking",
+      "displayName": "DeepSeek V3.2 Thinking",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.62,
+      "outputCost": 1.85,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.2",
+      "displayName": "DeepSeek V3.2",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.28,
+      "outputCost": 0.42,
+      "contextWindow": 163840,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-large-2512",
+      "displayName": "Mistral Large 3 2512",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.5,
+      "outputCost": 1.5,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4-5",
+      "displayName": "Claude Opus 4.5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 5,
+      "outputCost": 25,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-4-5",
+      "displayName": "Claude Sonnet 4.5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 3,
+      "outputCost": 15,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-haiku-4-5",
+      "displayName": "Claude Haiku 4.5",
+      "providerDisplay": "Anthropic",
+      "inputCost": 1,
+      "outputCost": 5,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.1-codex-max",
+      "displayName": "GPT 5.1 Codex Max",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.25,
+      "outputCost": 10,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.1-fast-non-reasoning",
+      "displayName": "Grok 4.1 Fast Non-Reasoning",
+      "providerDisplay": "Spacexai",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.5,
+      "contextWindow": 1000000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "spacexai/grok-4.1-fast-reasoning",
+      "displayName": "Grok 4.1 Fast Reasoning",
+      "providerDisplay": "Spacexai",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.5,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.1-thinking-fast",
+      "displayName": "GPT 5.1 Thinking (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2.5,
+      "outputCost": 20,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.1",
+      "displayName": "GPT-5.1",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.25,
+      "outputCost": 10,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.1-thinking",
+      "displayName": "GPT 5.1 Thinking",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.25,
+      "outputCost": 10,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.1-codex",
+      "displayName": "GPT-5.1-Codex",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.25,
+      "outputCost": 10,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.1-codex-mini",
+      "displayName": "GPT 5.1 Codex Mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.25,
+      "outputCost": 2,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "displayName": "Kimi K2 Thinking",
+      "providerDisplay": "Moonshot",
+      "inputCost": 0.6,
+      "outputCost": 2.5,
+      "contextWindow": 262144,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2",
+      "displayName": "Kimi K2 Instruct",
+      "providerDisplay": "Moonshot",
+      "inputCost": 0.5700000000000001,
+      "outputCost": 2.3,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-premier-v1",
+      "displayName": "Nova Premier 1.0",
+      "providerDisplay": "Amazon",
+      "inputCost": 2.5,
+      "outputCost": 12.5,
+      "contextWindow": 1000000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/voxtral-small-24b-2507",
+      "displayName": "Voxtral Small 24B 2507",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.3,
+      "contextWindow": 32000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-safeguard-20b",
+      "displayName": "GPT OSS Safeguard 20B",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.075,
+      "outputCost": 0.3,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-nano-12b-v2-vl",
+      "displayName": "Nvidia Nemotron Nano 12B V2 VL",
+      "providerDisplay": "NVIDIA",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.6,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m2",
+      "displayName": "MiniMax M2",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.255,
+      "outputCost": 1.02,
+      "contextWindow": 204800,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-vl-8b-instruct",
+      "displayName": "Qwen3 VL 8B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.25,
+      "outputCost": 0.75,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "interfaze/interfaze-beta",
+      "displayName": "Interfaze Beta",
+      "providerDisplay": "Interfaze",
+      "inputCost": 1.5,
+      "outputCost": 3.5,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-pro",
+      "displayName": "GPT-5 pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 15,
+      "outputCost": 120,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-fast",
+      "displayName": "GPT-5 (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2.5,
+      "outputCost": 20,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-codex",
+      "displayName": "GPT-5-Codex",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.25,
+      "outputCost": 10,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5",
+      "displayName": "GPT-5",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.25,
+      "outputCost": 10,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-mini-fast",
+      "displayName": "GPT-5 mini (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.44999999999999996,
+      "outputCost": 3.5999999999999996,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "displayName": "GPT-5 mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.25,
+      "outputCost": 2,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-5-nano",
+      "displayName": "GPT-5 nano",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.049999999999999996,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 400000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-thinking",
+      "displayName": "Qwen3 VL 30B A3B Thinking",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.29,
+      "outputCost": 1,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "displayName": "Qwen3 VL 30B A3B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.6",
+      "displayName": "GLM 4.6",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.5,
+      "outputCost": 2,
+      "contextWindow": 202752,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-exp",
+      "displayName": "DeepSeek V3.2 Exp",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.27,
+      "outputCost": 0.41,
+      "contextWindow": 163840,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "displayName": "Qwen3 VL 235B A22B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.21,
+      "outputCost": 1.9,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-vl-instruct",
+      "displayName": "Qwen3 VL 235B A22B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.88,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus",
+      "displayName": "DeepSeek V3.1 Terminus",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.27,
+      "outputCost": 1,
+      "contextWindow": 163840,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "displayName": "Qwen3 Next 80B A3B Thinking",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.15,
+      "outputCost": 1.2,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "displayName": "Qwen3 Next 80B A3B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.09,
+      "outputCost": 1.1,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905",
+      "displayName": "Kimi K2 0905",
+      "providerDisplay": "Moonshot",
+      "inputCost": 0.6,
+      "outputCost": 2.5,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance/seed-1.8",
+      "displayName": "Bytedance Seed 1.8",
+      "providerDisplay": "Bytedance",
+      "inputCost": 0.25,
+      "outputCost": 2,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "bytedance/seed-1.6",
+      "displayName": "Seed 1.6",
+      "providerDisplay": "Bytedance",
+      "inputCost": 0.25,
+      "outputCost": 2,
+      "contextWindow": 256000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3.1",
+      "displayName": "DeepSeek V3.1",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.25,
+      "outputCost": 0.95,
+      "contextWindow": 163840,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v3.1",
+      "displayName": "DeepSeek V3.1",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.25,
+      "outputCost": 0.95,
+      "contextWindow": 163840,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "nvidia/nemotron-nano-9b-v2",
+      "displayName": "Nvidia Nemotron Nano 9B V2",
+      "providerDisplay": "NVIDIA",
+      "inputCost": 0.06,
+      "outputCost": 0.22999999999999998,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-medium-3.1",
+      "displayName": "Mistral Medium 3.1",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.39999999999999997,
+      "outputCost": 2,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.5v",
+      "displayName": "GLM 4.5V",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.6,
+      "outputCost": 1.7999999999999998,
+      "contextWindow": 65536,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-4-1",
+      "displayName": "Claude Opus 4.1",
+      "providerDisplay": "Anthropic",
+      "inputCost": 15,
+      "outputCost": 75,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "displayName": "GPT OSS 120B",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "displayName": "GPT OSS 20B",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.018,
+      "outputCost": 0.09,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/codestral-2508",
+      "displayName": "Codestral 2508",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.3,
+      "outputCost": 0.8999999999999999,
+      "contextWindow": 256000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-coder-30b-a3b",
+      "displayName": "Qwen 3 Coder 30B A3B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-coder-30b-a3b-instruct",
+      "displayName": "Qwen3 Coder 30B A3B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.07,
+      "outputCost": 0.28,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "displayName": "Qwen3 30B A3B Instruct 2507",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.09,
+      "outputCost": 0.3,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.5",
+      "displayName": "GLM 4.5",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.6,
+      "outputCost": 2.2,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "z-ai/glm-4.5-air",
+      "displayName": "GLM 4.5 Air",
+      "providerDisplay": "Zhipu",
+      "inputCost": 0.13,
+      "outputCost": 0.85,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "displayName": "Qwen3 235B A22B Thinking 2507",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.44999999999999996,
+      "outputCost": 3.5,
+      "contextWindow": 131072,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-2507",
+      "displayName": "Qwen3 235B A22B Instruct 2507",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.09,
+      "outputCost": 0.55,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-coder",
+      "displayName": "Qwen3 Coder 480B A35B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.3,
+      "outputCost": 1,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-coder-flash",
+      "displayName": "Qwen3 Coder Flash",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.195,
+      "outputCost": 0.975,
+      "contextWindow": 1000000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-coder-next",
+      "displayName": "Qwen3 Coder Next",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.12,
+      "outputCost": 0.7999999999999999,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-small-3.2-24b-instruct",
+      "displayName": "Mistral Small 3.2 24B",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.09375,
+      "outputCost": 0.25,
+      "contextWindow": 256000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "minimax/minimax-m1",
+      "displayName": "MiniMax M1",
+      "providerDisplay": "MiniMax",
+      "inputCost": 0.55,
+      "outputCost": 2.2,
+      "contextWindow": 1000000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/o3-pro",
+      "displayName": "o3 Pro",
+      "providerDisplay": "OpenAI",
+      "inputCost": 20,
+      "outputCost": 80,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/o3-fast",
+      "displayName": "o3 (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 3.5,
+      "outputCost": 14,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/o3",
+      "displayName": "o3",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 8,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/o3-mini-high",
+      "displayName": "o3 Mini High",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.1,
+      "outputCost": 4.4,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/o3-mini",
+      "displayName": "o3-mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.1,
+      "outputCost": 4.4,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview",
+      "displayName": "Gemini 2.5 Pro Preview 06-05",
+      "providerDisplay": "Google",
+      "inputCost": 1.25,
+      "outputCost": 10,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "displayName": "Gemini 2.5 Pro",
+      "providerDisplay": "Google",
+      "inputCost": 1.25,
+      "outputCost": 10,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "displayName": "Gemini 2.5 Flash",
+      "providerDisplay": "Google",
+      "inputCost": 0.3,
+      "outputCost": 2.5,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite",
+      "displayName": "Gemini 2.5 Flash Lite",
+      "providerDisplay": "Google",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 1048576,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528",
+      "displayName": "R1 0528",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.5,
+      "outputCost": 2.1500000000000004,
+      "contextWindow": 163840,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-medium-3",
+      "displayName": "Mistral Medium 3",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.39999999999999997,
+      "outputCost": 2,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen-3-235b",
+      "displayName": "Qwen3 235B A22B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.22,
+      "outputCost": 0.88,
+      "contextWindow": 262144,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen-3-32b",
+      "displayName": "Qwen 3 32B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 128000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-14b",
+      "displayName": "Qwen3 14B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.12,
+      "outputCost": 0.24,
+      "contextWindow": 40960,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b",
+      "displayName": "Qwen3 30B A3B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.12,
+      "outputCost": 0.5,
+      "contextWindow": 40960,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen-3-14b",
+      "displayName": "Qwen3-14B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.12,
+      "outputCost": 0.24,
+      "contextWindow": 40960,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen-3-30b",
+      "displayName": "Qwen3-30B-A3B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.12,
+      "outputCost": 0.5,
+      "contextWindow": 40960,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-32b",
+      "displayName": "Qwen3 32B",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.08,
+      "outputCost": 0.28,
+      "contextWindow": 40960,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-image-1",
+      "displayName": "GPT Image 1",
+      "providerDisplay": "OpenAI",
+      "inputCost": 5,
+      "outputCost": 40,
+      "contextWindow": 0,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "image"
+      ]
+    },
+    {
+      "id": "openai/gpt-image-1-mini",
+      "displayName": "GPT Image 1 Mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2.5,
+      "outputCost": 32,
+      "contextWindow": 0,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "image"
+      ]
+    },
+    {
+      "id": "openai/o4-mini-fast",
+      "displayName": "o4-mini (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 8,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/o4-mini-high",
+      "displayName": "o4 Mini High",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.1,
+      "outputCost": 4.4,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/o4-mini",
+      "displayName": "o4-mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1.1,
+      "outputCost": 4.4,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-fast",
+      "displayName": "GPT-4.1 (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 3.5,
+      "outputCost": 14,
+      "contextWindow": 1047576,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1",
+      "displayName": "GPT-4.1",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2,
+      "outputCost": 8,
+      "contextWindow": 1047576,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-mini-fast",
+      "displayName": "GPT-4.1 mini (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.7,
+      "outputCost": 2.8,
+      "contextWindow": 1047576,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "displayName": "GPT-4.1 mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.39999999999999997,
+      "outputCost": 1.5999999999999999,
+      "contextWindow": 1047576,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-nano-fast",
+      "displayName": "GPT-4.1 nano (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.7999999999999999,
+      "contextWindow": 1047576,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-nano",
+      "displayName": "GPT-4.1 nano",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 1047576,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-4-maverick",
+      "displayName": "Llama 4 Maverick 17B Instruct",
+      "providerDisplay": "Meta",
+      "inputCost": 0.1875,
+      "outputCost": 0.6525,
+      "contextWindow": 1048576,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-4-scout",
+      "displayName": "Llama 4 Scout 17B Instruct",
+      "providerDisplay": "Meta",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.3,
+      "contextWindow": 327680,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "displayName": "DeepSeek V3 0324",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.29,
+      "outputCost": 1.1400000000000001,
+      "contextWindow": 163840,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-small-3.1-24b-instruct",
+      "displayName": "Mistral Small 3.1 24B",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.351,
+      "outputCost": 0.5549999999999999,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "cohere/command-a",
+      "displayName": "Command A",
+      "providerDisplay": "Cohere",
+      "inputCost": 2.5,
+      "outputCost": 10,
+      "contextWindow": 256000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemma-3-12b-it",
+      "displayName": "Gemma 3 12B",
+      "providerDisplay": "Google",
+      "inputCost": 0.049999999999999996,
+      "outputCost": 0.15,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "displayName": "Gemma 3 27B",
+      "providerDisplay": "Google",
+      "inputCost": 0.08,
+      "outputCost": 0.35,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "inception/mercury-coder-small",
+      "displayName": "Mercury Coder Small Beta",
+      "providerDisplay": "Inception",
+      "inputCost": 0.25,
+      "outputCost": 1,
+      "contextWindow": 32000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-saba",
+      "displayName": "Saba",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.19999999999999998,
+      "outputCost": 0.6,
+      "contextWindow": 32768,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen-plus",
+      "displayName": "Qwen-Plus",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.26,
+      "outputCost": 0.78,
+      "contextWindow": 1000000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "displayName": "DeepSeek-R1",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.7,
+      "outputCost": 2.5,
+      "contextWindow": 64000,
+      "reasoning": true,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-chat",
+      "displayName": "DeepSeek V3",
+      "providerDisplay": "DeepSeek",
+      "inputCost": 0.32,
+      "outputCost": 0.8899999999999999,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b",
+      "displayName": "Llama 3.3 70B Instruct",
+      "providerDisplay": "Meta",
+      "inputCost": 0.72,
+      "outputCost": 0.72,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct",
+      "displayName": "Llama 3.3 70B Instruct",
+      "providerDisplay": "Meta",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.32,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/o1",
+      "displayName": "o1",
+      "providerDisplay": "OpenAI",
+      "inputCost": 15,
+      "outputCost": 60,
+      "contextWindow": 200000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-pro-v1",
+      "displayName": "Nova Pro 1.0",
+      "providerDisplay": "Amazon",
+      "inputCost": 0.7999999999999999,
+      "outputCost": 3.1999999999999997,
+      "contextWindow": 300000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-lite-v1",
+      "displayName": "Nova Lite 1.0",
+      "providerDisplay": "Amazon",
+      "inputCost": 0.06,
+      "outputCost": 0.24,
+      "contextWindow": 300000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-micro-v1",
+      "displayName": "Nova Micro 1.0",
+      "providerDisplay": "Amazon",
+      "inputCost": 0.035,
+      "outputCost": 0.14,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-pro",
+      "displayName": "Nova Pro",
+      "providerDisplay": "Amazon",
+      "inputCost": 0.7999999999999999,
+      "outputCost": 3.1999999999999997,
+      "contextWindow": 300000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-lite",
+      "displayName": "Nova Lite",
+      "providerDisplay": "Amazon",
+      "inputCost": 0.06,
+      "outputCost": 0.24,
+      "contextWindow": 300000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "amazon/nova-micro",
+      "displayName": "Nova Micro",
+      "providerDisplay": "Amazon",
+      "inputCost": 0.035,
+      "outputCost": 0.14,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-2024-11-20",
+      "displayName": "GPT-4o (2024-11-20)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2.5,
+      "outputCost": 10,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-large-2407",
+      "displayName": "Mistral Large 2407",
+      "providerDisplay": "Mistral",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/ministral-8b",
+      "displayName": "Ministral 8B",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.15,
+      "outputCost": 0.15,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/ministral-3b",
+      "displayName": "Ministral 3B",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.09999999999999999,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen-2.5-7b-instruct",
+      "displayName": "Qwen2.5 7B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.09999999999999999,
+      "outputCost": 0.19999999999999998,
+      "contextWindow": 32768,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "qwen/qwen-2.5-72b-instruct",
+      "displayName": "Qwen2.5 72B Instruct",
+      "providerDisplay": "Qwen",
+      "inputCost": 0.36,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 32768,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-small",
+      "displayName": "Mistral Small",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 32000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "cohere/command-r-plus-08-2024",
+      "displayName": "Command R+ (08-2024)",
+      "providerDisplay": "Cohere",
+      "inputCost": 2.5,
+      "outputCost": 10,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "cohere/command-r-08-2024",
+      "displayName": "Command R (08-2024)",
+      "providerDisplay": "Cohere",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-2024-08-06",
+      "displayName": "GPT-4o (2024-08-06)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2.5,
+      "outputCost": 10,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b",
+      "displayName": "Llama 3.1 70B Instruct",
+      "providerDisplay": "Meta",
+      "inputCost": 0.72,
+      "outputCost": 0.72,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "displayName": "Llama 3.1 70B Instruct",
+      "providerDisplay": "Meta",
+      "inputCost": 0.39999999999999997,
+      "outputCost": 0.39999999999999997,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b",
+      "displayName": "Llama 3.1 8B Instruct",
+      "providerDisplay": "Meta",
+      "inputCost": 0.22,
+      "outputCost": 0.22,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "displayName": "Llama 3.1 8B Instruct",
+      "providerDisplay": "Meta",
+      "inputCost": 0.049999999999999996,
+      "outputCost": 0.08,
+      "contextWindow": 131072,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "displayName": "GPT-4o-mini (2024-07-18)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "displayName": "Mistral Nemo 12B",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.029,
+      "outputCost": 0.03,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/codestral",
+      "displayName": "Mistral Codestral",
+      "providerDisplay": "Mistral",
+      "inputCost": 0.3,
+      "outputCost": 0.8999999999999999,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "displayName": "GPT-4o (2024-05-13)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 5,
+      "outputCost": 15,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-fast",
+      "displayName": "GPT-4o (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 4.25,
+      "outputCost": 17,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4o",
+      "displayName": "GPT-4o",
+      "providerDisplay": "OpenAI",
+      "inputCost": 2.5,
+      "outputCost": 10,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-mini-fast",
+      "displayName": "GPT-4o mini (Fast)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.25,
+      "outputCost": 1,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "displayName": "GPT-4o mini",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.15,
+      "outputCost": 0.6,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mixtral-8x22b-instruct",
+      "displayName": "Mixtral 8x22B Instruct",
+      "providerDisplay": "Mistral",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 65536,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "mistralai/mistral-large",
+      "displayName": "Mistral Large",
+      "providerDisplay": "Mistral",
+      "inputCost": 2,
+      "outputCost": 6,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-0613",
+      "displayName": "GPT-3.5 Turbo (older v0613)",
+      "providerDisplay": "OpenAI",
+      "inputCost": 1,
+      "outputCost": 2,
+      "contextWindow": 4095,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openrouter/auto",
+      "displayName": "OpenRouter Auto",
+      "providerDisplay": "OpenRouter",
+      "inputCost": null,
+      "outputCost": null,
+      "contextWindow": 2000000,
+      "reasoning": true,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text",
+        "image"
+      ]
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-16k",
+      "displayName": "GPT-3.5 Turbo 16k",
+      "providerDisplay": "OpenAI",
+      "inputCost": 3,
+      "outputCost": 4,
+      "contextWindow": 16385,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4",
+      "displayName": "GPT-4",
+      "providerDisplay": "OpenAI",
+      "inputCost": 30,
+      "outputCost": 60,
+      "contextWindow": 8192,
+      "reasoning": false,
+      "compliant": true,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-4-turbo",
+      "displayName": "GPT-4 Turbo",
+      "providerDisplay": "OpenAI",
+      "inputCost": 10,
+      "outputCost": 30,
+      "contextWindow": 128000,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    },
+    {
+      "id": "openai/gpt-3.5-turbo",
+      "displayName": "GPT-3.5 Turbo",
+      "providerDisplay": "OpenAI",
+      "inputCost": 0.5,
+      "outputCost": 1.5,
+      "contextWindow": 16385,
+      "reasoning": false,
+      "compliant": false,
+      "featured": false,
+      "outputTypes": [
+        "text"
+      ]
+    }
+  ],
+  "inheritedModelId": "google/gemini-4-argon",
+  "defaultModelId": "anthropic/claude-sonnet-5-5",
+  "modelLocked": false
+}
