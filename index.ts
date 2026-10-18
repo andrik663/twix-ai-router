@@ -505,6 +505,7 @@ function renderDashboardHtml(): string {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Twix AI Router</title>
+  <script>document.documentElement.classList.toggle('dark', localStorage.getItem('twix-theme') === 'dark');</script>
   <style>
     :root {
       --bg: #f7f6f3;
@@ -524,6 +525,49 @@ function renderDashboardHtml(): string {
       --red-soft: rgba(191, 59, 48, 0.08);
       --purple: #6a4fbf;
       --purple-soft: rgba(106, 79, 194, 0.09);
+      --bar-bg: #eceae5;
+      --row-hover: #fafaf8;
+      --code-bg: #f4f2ee;
+      --code-text: #3f3d38;
+      --pill-bg: #f1efe9;
+      --tab-active: #efede8;
+      --topbar-bg: rgba(255,255,255,0.92);
+      --accent-border: rgba(43,86,198,.35);
+      --accent-border-soft: rgba(43,86,198,.18);
+      --green-border: rgba(23,122,69,.35);
+      --red-border: rgba(191,59,48,.35);
+      --amber-border: rgba(160,92,8,.25);
+    }
+    html.dark {
+      --bg: #17181b;
+      --card: #1f2125;
+      --border: #2c2f34;
+      --border-strong: #3a3e45;
+      --text: #e9e7e2;
+      --muted: #9c998f;
+      --accent: #7b96f2;
+      --accent-hover: #93a9f5;
+      --accent-soft: rgba(123, 150, 242, 0.12);
+      --green: #5ec489;
+      --green-soft: rgba(94, 196, 137, 0.12);
+      --amber: #e2a648;
+      --amber-soft: rgba(226, 166, 72, 0.12);
+      --red: #e2685c;
+      --red-soft: rgba(226, 104, 92, 0.12);
+      --purple: #a48ce0;
+      --purple-soft: rgba(164, 140, 224, 0.14);
+      --bar-bg: #2b2e33;
+      --row-hover: #23252a;
+      --code-bg: #232529;
+      --code-text: #cfccc4;
+      --pill-bg: #27292e;
+      --tab-active: #2b2e33;
+      --topbar-bg: rgba(23, 24, 27, 0.88);
+      --accent-border: rgba(123,150,242,.4);
+      --accent-border-soft: rgba(123,150,242,.25);
+      --green-border: rgba(94,196,137,.4);
+      --red-border: rgba(226,104,92,.4);
+      --amber-border: rgba(226,166,72,.35);
     }
     * { box-sizing: border-box; }
     html { -webkit-text-size-adjust: 100%; }
@@ -541,7 +585,7 @@ function renderDashboardHtml(): string {
     /* Top bar + workspace tabs */
     .topbar {
       position: sticky; top: 0; z-index: 20;
-      background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+      background: var(--topbar-bg); backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
     }
     .topbar-inner {
@@ -562,7 +606,7 @@ function renderDashboardHtml(): string {
       font-family: inherit;
     }
     .ws-tab:hover { color: var(--text); background: var(--accent-soft); }
-    .ws-tab.active { color: var(--text); background: #efede8; }
+    .ws-tab.active { color: var(--text); background: var(--tab-active); }
     .ws-slot-badge { font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
     .ws-add-btn {
       margin-left: 8px; background: var(--card); border: 1px solid var(--border-strong);
@@ -570,6 +614,13 @@ function renderDashboardHtml(): string {
       font-size: 13px; cursor: pointer; white-space: nowrap; transition: border-color .15s, color .15s;
     }
     .ws-add-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .theme-toggle {
+      background: transparent; border: 1px solid var(--border-strong); color: var(--muted);
+      padding: 6px 12px; border-radius: 8px; font-size: 12.5px; cursor: pointer;
+      font-weight: 550; font-family: inherit; white-space: nowrap;
+      transition: border-color .15s, color .15s;
+    }
+    .theme-toggle:hover { color: var(--text); border-color: var(--text); }
 
     /* Page head */
     .page-head { padding: 34px 0 2px; }
@@ -589,7 +640,7 @@ function renderDashboardHtml(): string {
       display: inline-flex; align-items: center; gap: 6px;
       padding: 2px 9px; border-radius: 999px;
       font-size: 11.5px; font-weight: 600; letter-spacing: 0.01em;
-      background: #f1efe9; color: var(--muted);
+      background: var(--pill-bg); color: var(--muted);
     }
     .pill-green { background: var(--green-soft); color: var(--green); }
     .pill-purple { background: var(--purple-soft); color: var(--purple); }
@@ -602,11 +653,11 @@ function renderDashboardHtml(): string {
       transition: border-color .15s, color .15s; font-family: inherit;
     }
     .btn-sm:hover { border-color: var(--text); }
-    .btn-cyan { color: var(--accent); border-color: rgba(43,86,198,.35); background: var(--accent-soft); }
+    .btn-cyan { color: var(--accent); border-color: var(--accent-border); background: var(--accent-soft); }
     .btn-cyan:hover { border-color: var(--accent); }
-    .btn-green { color: var(--green); border-color: rgba(23,122,69,.35); background: var(--green-soft); }
+    .btn-green { color: var(--green); border-color: var(--green-border); background: var(--green-soft); }
     .btn-green:hover { border-color: var(--green); }
-    .btn-danger { color: var(--red); border-color: rgba(191,59,48,.35); background: var(--red-soft); }
+    .btn-danger { color: var(--red); border-color: var(--red-border); background: var(--red-soft); }
     .btn-danger:hover { border-color: var(--red); }
 
     input, select {
@@ -631,7 +682,8 @@ function renderDashboardHtml(): string {
       border-radius: 10px; padding: 13px 16px; margin: 24px 0 14px;
       display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
     }
-    .rec-banner.warn { background: var(--amber-soft); border-color: rgba(160,92,8,.25); }
+    .rec-banner { border-color: var(--accent-border-soft); }
+    .rec-banner.warn { background: var(--amber-soft); border-color: var(--amber-border); }
     .rec-title { font-weight: 600; font-size: 13.5px; }
     .rec-desc { font-size: 12.5px; color: var(--muted); margin-top: 2px; max-width: 720px; }
 
@@ -651,7 +703,7 @@ function renderDashboardHtml(): string {
     .slot-num { font-size: 10.5px; font-weight: 700; letter-spacing: .06em; color: var(--muted); text-transform: uppercase; }
     .usage-wrap { margin: 10px 0; }
     .usage-labels { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 5px; color: var(--muted); }
-    .usage-bar-bg { width: 100%; height: 6px; background: #eceae5; border-radius: 999px; overflow: hidden; }
+    .usage-bar-bg { width: 100%; height: 6px; background: var(--bar-bg); border-radius: 999px; overflow: hidden; }
     .usage-bar-fill { height: 100%; border-radius: 999px; transition: width .3s ease; }
 
     /* Add-key form */
@@ -666,13 +718,13 @@ function renderDashboardHtml(): string {
     .progress { margin: 14px 0 0; }
 
     /* Table & code */
-    pre { background: #f4f2ee; border: 1px solid var(--border); border-radius: 8px; padding: 12px; overflow-x: auto; font-size: 12.5px; color: #3f3d38; margin: 8px 0 0; }
+    pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px; overflow-x: auto; font-size: 12.5px; color: var(--code-text); margin: 8px 0 0; }
     .table-wrap { overflow-x: auto; max-height: 520px; border: 1px solid var(--border); border-radius: 10px; }
     table { width: 100%; border-collapse: collapse; font-size: 13px; }
     th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
     th { background: var(--card); position: sticky; top: 0; z-index: 1; color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; }
     tbody tr:last-child td { border-bottom: none; }
-    tbody tr:hover { background: #fafaf8; }
+    tbody tr:hover { background: var(--row-hover); }
     code.id { color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 5px; font-weight: 550; font-size: 12px; }
     .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
 
@@ -689,6 +741,7 @@ function renderDashboardHtml(): string {
         <div class="brand">Twix AI Router</div>
         <div class="brand-meta">${catalogModels.length} model terverifikasi · failover otomatis</div>
         <nav class="ws-bar" id="ws-bar"></nav>
+        <button class="theme-toggle" id="theme-btn" onclick="toggleTheme()">Mode gelap</button>
       </div>
     </header>
 
@@ -1092,23 +1145,23 @@ function renderDashboardHtml(): string {
         const isExhausted = k.status === 'exhausted' || pct >= 100;
         const isUnused = used === 0 && !isExhausted;
 
-        let barColor = '#10b981';
+        let barColor = 'var(--green)';
         let stateLabel = 'Standby · 0%';
         let cardClass = 'key-card';
 
         if (!k.enabled) {
-          barColor = '#a8a29e';
+          barColor = 'var(--muted)';
           stateLabel = 'Nonaktif';
         } else if (isExhausted) {
-          barColor = '#bf3b30';
+          barColor = 'var(--red)';
           stateLabel = 'Habis 100% · ganti key';
           cardClass = 'key-card exhausted-turn';
         } else if (pct >= 80) {
-          barColor = '#a05c08';
+          barColor = 'var(--amber)';
           stateLabel = (isTurn ? 'Aktif · ' : '') + 'Hampir habis (' + pct + '%)';
           cardClass = 'key-card warning-turn';
         } else if (isTurn) {
-          barColor = 'linear-gradient(90deg, #10b981, #38bdf8)';
+          barColor = 'var(--green)';
           stateLabel = 'Aktif · giliran utama';
           cardClass = 'key-card active-turn';
         } else if (!isUnused) {
@@ -1131,7 +1184,7 @@ function renderDashboardHtml(): string {
             <div class="usage-wrap">
               <div class="usage-labels">
                 <span>Pemakaian Kuota: <strong>\${used} / \${limit} req</strong></span>
-                <span style="color:\${isExhausted ? '#bf3b30' : pct >= 80 ? '#a05c08' : '#177a45'}; font-size:0.86rem;">\${pct}%</span>
+                <span style="color:\${isExhausted ? 'var(--red)' : pct >= 80 ? 'var(--amber)' : 'var(--green)'}; font-size:0.86rem;">\${pct}%</span>
               </div>
               <div class="usage-bar-bg">
                 <div class="usage-bar-fill" style="width:\${pct}%; background:\${barColor};"></div>
@@ -1140,7 +1193,7 @@ function renderDashboardHtml(): string {
 
             <div style="font-size:0.73rem; color:var(--muted); margin-bottom:10px; display:flex; justify-content:space-between;">
               <span>Sukses: \${k.success_count} | Gagal: \${k.fail_count}</span>
-              <span style="color:#bf3b30; max-width:190px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="\${escapeHtml(k.last_error || '')}">\${escapeHtml(k.last_error || 'Sehat')}</span>
+              <span style="color:var(--red); max-width:190px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="\${escapeHtml(k.last_error || '')}">\${escapeHtml(k.last_error || 'Sehat')}</span>
             </div>
 
             <div style="display:flex; gap:6px; flex-wrap:wrap;">
@@ -1269,8 +1322,8 @@ function renderDashboardHtml(): string {
         const r = TEST_RESULTS[m.id];
         const lat = r?.latencyMs ? r.latencyMs + ' ms' : '-';
         const detail = r?.status === 'ok'
-          ? '<span style="color:#177a45">' + escapeHtml(r.reply) + '</span>'
-          : '<span style="color:#bf3b30">' + escapeHtml(r?.error || '') + '</span>';
+          ? '<span style="color:var(--green)">' + escapeHtml(r.reply) + '</span>'
+          : '<span style="color:var(--red)">' + escapeHtml(r?.error || '') + '</span>';
         const safeId = m.id.replace(/[^a-zA-Z0-9_-]/g, '_');
         return \`
           <tr id="row-\${safeId}">
@@ -1296,11 +1349,11 @@ function renderDashboardHtml(): string {
       if (latEl) latEl.innerText = r?.latencyMs ? r.latencyMs + ' ms' : '-';
       if (detEl && r) {
         if (r.status === 'testing') {
-          detEl.innerHTML = '<span style="color:#a05c08">Mengirim prompt…</span>';
+          detEl.innerHTML = '<span style="color:var(--amber)">Mengirim prompt…</span>';
         } else if (r.status === 'ok') {
-          detEl.innerHTML = '<span style="color:#177a45">' + escapeHtml(r.reply) + '</span>';
+          detEl.innerHTML = '<span style="color:var(--green)">' + escapeHtml(r.reply) + '</span>';
         } else {
-          detEl.innerHTML = '<span style="color:#bf3b30">' + escapeHtml(r.error) + '</span>';
+          detEl.innerHTML = '<span style="color:var(--red)">' + escapeHtml(r.error) + '</span>';
         }
       }
     }
@@ -1412,8 +1465,19 @@ function renderDashboardHtml(): string {
       navigator.clipboard.writeText(document.getElementById(id).innerText);
     }
 
+    function applyTheme(t) {
+      document.documentElement.classList.toggle('dark', t === 'dark');
+      localStorage.setItem('twix-theme', t);
+      const btn = document.getElementById('theme-btn');
+      if (btn) btn.textContent = t === 'dark' ? 'Mode terang' : 'Mode gelap';
+    }
+    function toggleTheme() {
+      applyTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark');
+    }
+
     loadWorkspacesAndKeys();
     renderRows(MODELS);
+    applyTheme(localStorage.getItem('twix-theme') || 'light');
   </script>
 </body>
 </html>`;
